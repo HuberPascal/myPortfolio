@@ -1,0 +1,141 @@
+.above-the-fold-container {
+  height: 100vh;
+  position: relative;
+  top: 113px;
+  background-color: #141d2f;
+}
+
+.photo-shadow {
+  position: absolute;
+  top: 115px;
+  left: 12px;
+}
+
+.character-photo {
+  position: absolute;
+  top: 0;
+  left: 47px;
+}
+
+.background-section-img {
+  position: absolute;
+  top: 259px;
+
+  img {
+    width: 100vw;
+  }
+}
+
+.above-the-fold-text-container h1 {
+  font-size: 90px;
+  font-weight: 700;
+  margin: 0;
+  color: #ffffff;
+}
+
+.above-the-fold-text-container h2 {
+  font-size: 75px;
+  font-weight: 400;
+  margin: 0;
+  color: #ffffff;
+}
+
+.above-the-fold-text-container h3 {
+  font-size: 48px;
+  font-weight: 400;
+  margin: 0;
+  color: #4b47ff;
+}
+
+.above-the-fold-text-container {
+  position: absolute;
+  top: 191px;
+  right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.above-the-fold-right {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.above-the-fold-left {
+  display: flex;
+  transform: rotate(-90deg);
+  text-align: center;
+}
+
+button {
+  font-size: 23px;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  bottom: -100px;
+  right: 50%;
+  transform: translate(50%);
+  padding: 15px 30px;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #00bee8;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+  box-sizing: border-box;
+  transform-origin: center;
+  cursor: pointer;
+
+  &:hover {
+    animation: enlargeButton 0.1s ease-in-out forwards;
+  }
+
+  @keyframes enlargeButton {
+    to {
+      transform: scale(1.1);
+      transform: translate(50%);
+
+      padding: 20px 40px;
+      background-color: #4b47ff;
+    }
+  }
+}
+
+.social-Media-container {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+  position: absolute;
+  top: 797px;
+  height: 40px;
+}
+
+.social-Media-left {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+
+.social-Media-right {
+  display: flex;
+  align-items: flex-start;
+  font-size: 23px;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  height: 100%;
+  cursor: pointer;
+}
+
+.social-Media-icons {
+  display: flex;
+  gap: 42px;
+
+  img {
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}

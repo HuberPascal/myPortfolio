@@ -1,0 +1,24 @@
+<div
+  class="projects"
+  *ngFor="let project of projects; let i = index"
+  [ngClass]="getCssClasses(i)"
+>
+  <div [ngClass]="getMirroredClasses(i)" class="projects-left">
+    <img [src]="project.imageSrc" alt="" />
+  </div>
+  <div class="projects-right">
+    <div class="project">
+      <h4 [ngClass]="getMirroredClasses(i)">{{ project.title }}</h4>
+      <span [ngClass]="getMirroredClasses(i)">{{ project.technologies }}</span>
+      <p [ngClass]="getMirroredClasses(i)">{{ project.description }}</p>
+    </div>
+    <div [ngClass]="getMirroredBtnClasses(i)" class="project-btn-container">
+      <a class="live-test-btn" [href]="project.liveTestLink" target="_blank"
+        >Live test</a
+      >
+      <a class="github-btn" [href]="project.githubLink" target="_blank"
+        >Github</a
+      >
+    </div>
+  </div>
+</div>

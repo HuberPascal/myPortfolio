@@ -1,0 +1,36 @@
+<div class="my-skills-container">
+  <div class="my-skill-section">
+    <div class="my-skills-left">
+      <div class="icons-bar">
+        <div
+          *ngFor="let icon of mySkillsIcons; let i = index"
+          class="skill-item"
+        >
+          <img
+            src="../../assets/image/icons/mySkills/{{ icon }}"
+            alt="{{ skills[i] }} Icon"
+          />
+          <span>{{ skills[i] }}</span>
+        </div>
+      </div>
+    </div>
+    <div class="my-skills-right">
+      <div class="my-skill-text-container">
+        <div class="my-skills-titel">
+          <h1>My skills</h1>
+          <!-- <img src="../../assets/image/blue-line-my-skills.png" alt="" /> -->
+          <div class="blue-line"></div>
+        </div>
+
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi
+          voluptate mollitia delectus doloremque rerum molestias!
+        </p>
+        <button>Get in touch</button>
+      </div>
+    </div>
+  </div>
+  <div class="my-skills-background-img">
+    <img src="../../assets/image/background-my-skills.png" alt="" />
+  </div>
+</div>
