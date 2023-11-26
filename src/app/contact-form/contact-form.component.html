@@ -1,0 +1,155 @@
+<form (submit)="sendMail($event)" autocomplete="off">
+  <div class="form-text-area">
+    <div class="input-container-name">
+      <input
+        [(ngModel)]="inputValueName"
+        [ngClass]="{
+          'red-border': inputFocusName && inputValueName.length < 5,
+          'green-border':
+            inputFocusName && inputValueName && inputValueName.length >= 5,
+          'blue-border': !inputFocusName && !inputValueName
+        }"
+        type="text"
+        name="name"
+        placeholder="Your name"
+        (focus)="onInputFocusName()"
+        (blur)="onInputBlurName()"
+      />
+      <img
+        *ngIf="showImageName && inputFocusName && inputValueName.length < 5"
+        src="../../assets/image/icons/contact/mistake-icon.png"
+        alt=""
+        class="icon-img"
+      />
+      <img
+        *ngIf="showImageName && inputFocusName && inputValueName.length >= 5"
+        src="../../assets/image/icons/contact/correct-icon.png"
+        alt=""
+        class="icon-img"
+      />
+      <div
+        *ngIf="inputFocusName && inputValueName.length < 5"
+        [class.required]="showErrorMessageName"
+      >
+        <p>Your name is required</p>
+      </div>
+    </div>
+
+    <div class="input-container-mail">
+      <input
+        [(ngModel)]="inputValueMail"
+        [ngClass]="{
+          'red-border': inputFocusMail && !isEmailValid(),
+          'green-border': inputFocusMail && inputValueMail && isEmailValid(),
+          'blue-border': !inputFocusMail && !inputValueMail
+        }"
+        type="email"
+        name="email"
+        placeholder="Your email"
+        (focus)="onInputFocusMail()"
+        (blur)="onInputBlurMail()"
+      />
+      <img
+        *ngIf="showImageMail && inputFocusMail && !isEmailValid()"
+        src="../../assets/image/icons/contact/mistake-icon.png"
+        alt=""
+        class="icon-img"
+      />
+      <img
+        *ngIf="
+          showImageMail && inputFocusMail && inputValueMail && isEmailValid()
+        "
+        src="../../assets/image/icons/contact/correct-icon.png"
+        alt=""
+        class="icon-img"
+      />
+      <div
+        *ngIf="inputFocusMail && !isEmailValid()"
+        [class.required]="showErrorMessageMail"
+      >
+        <p>Your email is required</p>
+      </div>
+    </div>
+    <div class="textarea-container-message">
+      <textarea
+        [(ngModel)]="inputValueMessage"
+        [ngClass]="{
+          'red-border': inputFocusMessage && inputValueMessage.length < 20,
+          'green-border':
+            inputFocusMessage &&
+            inputValueMessage &&
+            inputValueMessage.length >= 20,
+          'blue-border': !inputFocusMessage && !inputValueMessage
+        }"
+        name="message"
+        placeholder="Your message"
+        (focus)="onInputFocusMessage()"
+        (blur)="onInputBlurMessage()"
+      ></textarea>
+      <img
+        *ngIf="
+          showImageMessage && inputFocusMessage && inputValueMessage.length < 20
+        "
+        src="../../assets/image/icons/contact/mistake-icon.png"
+        alt=""
+        class="icon-img-textarea"
+      />
+      <img
+        *ngIf="
+          showImageMessage &&
+          inputFocusMessage &&
+          inputValueMessage &&
+          inputValueMessage.length >= 20
+        "
+        src="../../assets/image/icons/contact/correct-icon.png"
+        alt=""
+        class="icon-img-textarea"
+      />
+      <div
+        *ngIf="inputValueMessage && inputValueMessage.length < 20"
+        [class.required]="showErrorMessageTextarea"
+      >
+        <p>Your message is empty</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-send">
+    <div class="checkbox-section">
+      <div class="checkbox-container">
+        <input
+          type="checkbox"
+          [(ngModel)]="privacyPolicyChecked"
+          name="privacyPolicy"
+        />
+        <p>
+          I`ve read the <a href="#">privacy policy</a> and agree to the
+          processing of my data as outlined.
+        </p>
+      </div>
+      <p
+        *ngIf="
+          isNameValid() &&
+          isEmailValid() &&
+          isMessageValid() &&
+          !privacyPolicyChecked
+        "
+        class="required"
+      >
+        Please accept the privacy policy
+      </p>
+    </div>
+    <div class="button-container">
+      <button
+        type="submit"
+        [ngStyle]="{
+          'background-color': isFormValid() ? '#00BEE8' : '#B6B6B6',
+          cursor: isFormValid() ? 'pointer' : 'not-allowed'
+        }"
+        [disabled]="!isFormValid()"
+      >
+        Send message :&#41;
+      </button>
+    </div>
+  </div>
+</form>

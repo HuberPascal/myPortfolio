@@ -12,6 +12,9 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { MySkillsComponent } from './my-skills/my-skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ProjectsShowcaseComponent } from './projects-showcase/projects-showcase.component';
+import { ContactComponent } from './contact/contact.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,8 +25,10 @@ import { ProjectsShowcaseComponent } from './projects-showcase/projects-showcase
     MySkillsComponent,
     PortfolioComponent,
     ProjectsShowcaseComponent,
+    ContactComponent,
+    ContactFormComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
 })
