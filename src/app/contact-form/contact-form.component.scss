@@ -50,17 +50,17 @@ button {
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
   border: none;
 
-  // &:hover {
-  //   animation: enlargeButton 0.1s ease-in-out forwards;
-  // }
+  &:enabled:hover {
+    animation: enlargeButton 0.1s ease-in-out forwards;
+  }
 
-  // @keyframes enlargeButton {
-  //   to {
-  //     transform: translate(50%) scale(1.1);
-  //     padding: 20px 40px;
-  //     background-color: #4b47ff;
-  //   }
-  // }
+  @keyframes enlargeButton {
+    to {
+      transform: scale(1.1);
+      padding: 20px 40px;
+      background-color: #4b47ff;
+    }
+  }
 }
 
 .form-send {
@@ -78,7 +78,6 @@ button {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
   width: 100%;
   margin-top: 16px;
 
@@ -91,6 +90,7 @@ button {
   a {
     text-decoration: none;
     color: #4b47ff;
+    padding: 5px 4px;
   }
 }
 
@@ -98,6 +98,51 @@ button {
   display: flex;
   align-items: center;
   gap: 8px;
+  position: relative;
+
+  input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  img {
+    position: relative;
+    left: 0;
+    top: 50%;
+  }
+}
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox-icon {
+  position: relative;
+  left: 0;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../assets/image/icons/contact/unchecked-icon.png");
+
+  &:hover {
+    background-image: url("../../assets/image/icons/contact/unchecked-icon-hover.png");
+  }
+}
+
+.checked {
+  background-image: url("../../assets/image/icons/contact/checked-icon.png");
+
+  &:hover {
+    background-image: url("../../assets/image/icons/contact/checked-icon-hover.png");
+  }
+}
+
+.checkbox-container .icon-img {
+  width: 24px;
+  height: 24px;
 }
 
 .button-container {
@@ -107,19 +152,23 @@ button {
   transform: translate(-50%);
 }
 
+@keyframes fadeIn {
+  from {
+    padding-top: 0;
+  }
+  to {
+    padding-top: 10px;
+  }
+}
+
 .required {
   color: #e61c40;
   display: block;
   padding-top: 10px;
   animation: fadeIn 0.3s ease-in-out;
 
-  @keyframes fadeIn {
-    from {
-      padding-top: 0;
-    }
-    to {
-      padding-top: 10px;
-    }
+  .reverse {
+    animation-direction: reverse;
   }
 }
 

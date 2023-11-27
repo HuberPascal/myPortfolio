@@ -49,14 +49,20 @@ h1 {
   // padding-right: 100px;
   padding-top: 110px;
   position: relative;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   button {
     font-size: 23px;
     font-family: "Poppins", sans-serif;
-    position: absolute;
-    bottom: -100px;
-    right: 50%;
-    transform: translate(50%);
+    // position: absolute;
+    // bottom: -100px;
+    // right: 50%;
+    // transform: translateX(50%);
     padding: 15px 30px;
     border-radius: 10px;
     color: #ffffff;
@@ -72,8 +78,8 @@ h1 {
 
     @keyframes enlargeButton {
       to {
-        transform: translate(50%) scale(1.1);
-        padding: 20px 40px;
+        transform: scaleX(1.1);
+        padding: 20px 30px;
         background-color: #4b47ff;
       }
     }

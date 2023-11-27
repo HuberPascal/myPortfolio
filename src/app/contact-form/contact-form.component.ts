@@ -87,6 +87,10 @@ export class ContactFormComponent {
     return this.inputValueMessage.length >= 20;
   }
 
+  toggleCheckbox() {
+    this.privacyPolicyChecked = !this.privacyPolicyChecked;
+  }
+
   // isPrivacyPolicyChecked(): boolean {
   //   return this.privacyPolicyChecked;
   // }

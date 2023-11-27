@@ -27,10 +27,7 @@
         alt=""
         class="icon-img"
       />
-      <div
-        *ngIf="inputFocusName && inputValueName.length < 5"
-        [class.required]="showErrorMessageName"
-      >
+      <div class="required" *ngIf="inputFocusName && inputValueName.length < 5">
         <p>Your name is required</p>
       </div>
     </div>
@@ -63,10 +60,7 @@
         alt=""
         class="icon-img"
       />
-      <div
-        *ngIf="inputFocusMail && !isEmailValid()"
-        [class.required]="showErrorMessageMail"
-      >
+      <div class="required" *ngIf="inputFocusMail && !isEmailValid()">
         <p>Your email is required</p>
       </div>
     </div>
@@ -105,11 +99,8 @@
         alt=""
         class="icon-img-textarea"
       />
-      <div
-        *ngIf="inputValueMessage && inputValueMessage.length < 20"
-        [class.required]="showErrorMessageTextarea"
-      >
-        <p>Your message is empty</p>
+      <div class="required" *ngIf="inputFocusMessage && !isMessageValid()">
+        <p>Your message is empty or less than 20 characters</p>
       </div>
     </div>
   </div>
@@ -117,11 +108,19 @@
   <div class="form-send">
     <div class="checkbox-section">
       <div class="checkbox-container">
-        <input
+        <!-- <input
           type="checkbox"
+          id="customCheckbox"
           [(ngModel)]="privacyPolicyChecked"
           name="privacyPolicy"
-        />
+        /> -->
+        <div class="checkbox" (click)="toggleCheckbox()">
+          <div
+            class="checkbox-icon"
+            [class.checked]="privacyPolicyChecked"
+          ></div>
+        </div>
+
         <p>
           I`ve read the <a href="#">privacy policy</a> and agree to the
           processing of my data as outlined.
