@@ -7,6 +7,7 @@ import { ScrollService } from '../scroll.service';
   styleUrl: './my-skills.component.scss',
 })
 export class MySkillsComponent implements OnInit {
+  scrolled: boolean = false;
   constructor(private scrollService: ScrollService) {}
 
   ngOnInit() {

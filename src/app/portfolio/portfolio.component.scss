@@ -38,23 +38,41 @@ h1 {
 }
 
 .portfolio-titel {
-  width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
   gap: 42px;
 }
 
-.blue-line-left {
-  height: 4px;
-  background-color: #4b47ff;
-  width: 109px;
-}
-
+.blue-line-left,
 .blue-line-right {
   height: 4px;
   background-color: #4b47ff;
-  width: 484px;
+}
+
+.headline-container {
+  flex: 1;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+}
+
+.first-headline-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.center-headline-container {
+  flex-grow: 1 !important;
+  // max-width: 30% !important;
+}
+.blue-line-left {
+  width: 30%;
+}
+
+.blue-line-right {
+  width: 100%;
 }
 
 .portfolio-background-img-left {

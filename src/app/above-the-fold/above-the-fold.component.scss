@@ -2,7 +2,7 @@
   height: 100vh;
   position: relative;
   top: 113px;
-  background-color: #141d2f;
+  background-color: var(--dark-blue);
 }
 
 .photo-shadow {
@@ -35,21 +35,21 @@
   font-size: 90px;
   font-weight: 700;
   margin: 0;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .above-the-fold-text-container h2 {
   font-size: 75px;
   font-weight: 400;
   margin: 0;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .above-the-fold-text-container h3 {
   font-size: 48px;
   font-weight: 400;
   margin: 0;
-  color: #4b47ff;
+  color: var(--blue);
 }
 
 .above-the-fold-text-container {
@@ -60,7 +60,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  // gap: 34px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -92,8 +91,8 @@ button {
   transform: translateX(50%);
   padding: 15px 30px;
   border-radius: 10px;
-  color: #ffffff;
-  background-color: #00bee8;
+  color: var(--white);
+  background-color: var(--blue-light);
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
   border: none;
   box-sizing: border-box;
@@ -102,7 +101,7 @@ button {
 
   &:hover {
     transform: translateX(50%) scale(1.1);
-    background-color: #4b47ff;
+    background-color: var(--blue);
   }
 }
 
@@ -126,7 +125,7 @@ button {
   align-items: flex-start;
   font-size: 23px;
   font-family: "Poppins", sans-serif;
-  color: #ffffff;
+  color: var(--white);
   height: 100%;
   cursor: pointer;
 
@@ -152,7 +151,7 @@ button {
   display: flex;
   align-items: center;
   gap: 3px;
-  color: #fff;
+  color: var(--white);
   font-size: 23px;
   font-family: "Poppins", sans-serif;
   position: absolute;
@@ -160,7 +159,6 @@ button {
   top: 800px;
   z-index: 3;
   line-height: 120%;
-  cursor: pointer;
   animation: rotateAndMove 2s ease-in-out infinite;
 
   img {

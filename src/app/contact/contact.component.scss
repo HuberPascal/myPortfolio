@@ -23,18 +23,18 @@ span {
 }
 
 .contact-container {
-  color: white;
+  color: var(--white);
   font-family: "Poppins", sans-serif;
   padding-top: 138px;
   padding-bottom: 235px;
-  background-color: #141d2f;
+  background-color: var(--dark-blue);
   box-sizing: border-box;
   height: auto;
 }
 
 .blue-line {
   height: 4px;
-  background-color: #4b47ff;
+  background-color: var(--blue);
   width: 50px;
 }
 
