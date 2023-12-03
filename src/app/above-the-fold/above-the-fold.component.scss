@@ -1,4 +1,4 @@
-.above-the-fold-container {
+#above-the-fold {
   height: 100vh;
   position: relative;
   top: 113px;
@@ -15,6 +15,11 @@
   position: absolute;
   top: 0;
   left: 47px;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .background-section-img {
@@ -55,7 +60,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 34px;
+  // gap: 34px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -78,38 +83,26 @@
   text-align: center;
 }
 
-.button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+button {
+  font-size: 23px;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  bottom: -100px;
+  right: 50%;
+  transform: translateX(50%);
+  padding: 15px 30px;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #00bee8;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
 
-  button {
-    font-size: 23px;
-    font-family: "Poppins", sans-serif;
-    // position: absolute;
-    // bottom: -100px;
-    // right: 50%;
-    // transform: translateX(50%);
-    padding: 15px 30px;
-    border-radius: 10px;
-    color: #ffffff;
-    background-color: #00bee8;
-    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    border: none;
-    box-sizing: border-box;
-    cursor: pointer;
-
-    &:hover {
-      animation: enlargeButton 0.1s ease-in-out forwards;
-    }
-
-    @keyframes enlargeButton {
-      to {
-        transform: scaleX(1.1);
-        padding: 20px 30px;
-        background-color: #4b47ff;
-      }
-    }
+  &:hover {
+    transform: translateX(50%) scale(1.1);
+    background-color: #4b47ff;
   }
 }
 
@@ -136,6 +129,10 @@
   color: #ffffff;
   height: 100%;
   cursor: pointer;
+
+  &:hover {
+    text-shadow: 0 0 7px rgba(255, 255, 255, 0.5);
+  }
 }
 
 .social-Media-icons {
@@ -147,6 +144,36 @@
 
     &:hover {
       transform: scale(1.2);
+    }
+  }
+}
+
+.scroll-down-container {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  color: #fff;
+  font-size: 23px;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  right: 50px;
+  top: 800px;
+  z-index: 3;
+  line-height: 120%;
+  cursor: pointer;
+  animation: rotateAndMove 2s ease-in-out infinite;
+
+  img {
+    transform: rotate(-90deg);
+  }
+
+  @keyframes rotateAndMove {
+    0%,
+    100% {
+      transform: translateY(0) rotate(90deg);
+    }
+    50% {
+      transform: translateY(20px) rotate(90deg);
     }
   }
 }

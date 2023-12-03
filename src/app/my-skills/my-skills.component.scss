@@ -10,7 +10,7 @@ h1 {
   margin: 0;
 }
 
-.my-skills-container {
+#my-skills {
   color: white;
   font-family: "Poppins", sans-serif;
   position: relative;
@@ -46,43 +46,30 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 34px;
-  // padding-right: 100px;
   padding-top: 110px;
   position: relative;
 }
 
-.button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+button {
+  font-size: 23px;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  bottom: -100px;
+  right: 50%;
+  transform: translateX(50%);
+  padding: 15px 30px;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #00bee8;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
 
-  button {
-    font-size: 23px;
-    font-family: "Poppins", sans-serif;
-    // position: absolute;
-    // bottom: -100px;
-    // right: 50%;
-    // transform: translateX(50%);
-    padding: 15px 30px;
-    border-radius: 10px;
-    color: #ffffff;
-    background-color: #00bee8;
-    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    border: none;
-    box-sizing: border-box;
-    cursor: pointer;
-
-    &:hover {
-      animation: enlargeButton 0.1s ease-in-out forwards;
-    }
-
-    @keyframes enlargeButton {
-      to {
-        transform: scaleX(1.1);
-        padding: 20px 30px;
-        background-color: #4b47ff;
-      }
-    }
+  &:hover {
+    transform: translateX(50%) scale(1.1);
+    background-color: #4b47ff;
   }
 }
 
@@ -141,6 +128,7 @@ h1 {
     position: absolute;
     bottom: -300px;
     left: 0;
+    z-index: 1;
   }
 }
 

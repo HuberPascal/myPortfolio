@@ -1,11 +1,27 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ScrollService } from '../scroll.service';
 
 @Component({
   selector: 'app-my-skills',
   templateUrl: './my-skills.component.html',
   styleUrl: './my-skills.component.scss',
 })
-export class MySkillsComponent {
+export class MySkillsComponent implements OnInit {
+  constructor(private scrollService: ScrollService) {}
+
+  ngOnInit() {
+    this.scrollService.scrollEvent.subscribe((sectionId) => {
+      this.scrollToSection(sectionId);
+    });
+  }
+
+  scrollToSection(sectionId: string) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   mySkillsIcons: string[] = [
     'angular-icon.png',
     'typescript-icon.png',

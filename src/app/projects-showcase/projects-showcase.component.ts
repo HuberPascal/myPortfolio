@@ -17,7 +17,7 @@ export class ProjectsShowcaseComponent {
       githubLink: 'Link zum GitHub-Repo',
     },
     {
-      imageSrc: '../../assets/image/join-photo.png',
+      imageSrc: '../../assets/image/Pollo-loco.png',
       title: 'El pollo loco',
       technologies: 'JavaScript | HTML | CSS',
       description:
