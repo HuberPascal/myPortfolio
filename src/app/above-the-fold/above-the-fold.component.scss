@@ -115,6 +115,7 @@ button {
   position: absolute;
   top: 797px;
   height: 40px;
+  z-index: 2;
 }
 
 .social-Media-left {
@@ -131,6 +132,7 @@ button {
   color: var(--white);
   height: 100%;
   cursor: pointer;
+  text-decoration: none;
 
   &:hover {
     text-shadow: 0 0 7px rgba(255, 255, 255, 0.5);

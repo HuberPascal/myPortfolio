@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-// import { ViewportScroller } from '@angular/common';
+import { ScrollService } from '../scroll.service';
 
 @Component({
   selector: 'app-above-the-fold',
@@ -7,11 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './above-the-fold.component.scss',
 })
 export class AboveTheFoldComponent {
-  // constructor(private viewportScroller: ViewportScroller) {}
-  // scrollToBottom() {
-  //   window.scrollTo({
-  //     top: document.body.scrollHeight,
-  //     behavior: 'smooth',
-  //   });
-  // }
+  constructor(private scrollService: ScrollService) {}
+
+  scrollToSection(sectionId: string) {
+    this.scrollService.scrollToSection(sectionId);
+  }
 }

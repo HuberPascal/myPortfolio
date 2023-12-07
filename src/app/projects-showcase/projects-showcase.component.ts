@@ -8,22 +8,22 @@ import { Component } from '@angular/core';
 export class ProjectsShowcaseComponent {
   projects = [
     {
-      imageSrc: '../../assets/image/join-photo.png',
+      imageSrc: '../../assets/image/join.png',
       title: 'Join',
-      technologies: 'Angular | Typescript | HTML | Firebase',
+      technologies: 'JavaScript | HTML | CSS',
       description:
         'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
-      liveTestLink: 'Link zum Live-Test',
-      githubLink: 'Link zum GitHub-Repo',
+      liveTestLink: 'https://pascal-huber.developerakademie.net/Join-Privat',
+      githubLink: 'https://github.com/HuberPascal/Join-Privat/',
     },
     {
       imageSrc: '../../assets/image/Pollo-loco.png',
       title: 'El pollo loco',
       technologies: 'JavaScript | HTML | CSS',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae suscipit perferendis...',
-      liveTestLink: 'Link zum Live-Test',
-      githubLink: 'Link zum GitHub-Repo',
+        'A simple jump-and-run game using an object-oriented approach. Help Pepe gather salsa bottles to defend against the aggressive chicken.',
+      liveTestLink: 'https://pascal-huber.developerakademie.net/El-pollo-loco/',
+      githubLink: 'https://github.com/HuberPascal/El-pollo-loco',
     },
     {
       imageSrc: '../../assets/image/join-photo.png',
@@ -33,6 +33,15 @@ export class ProjectsShowcaseComponent {
         'A very Simple Customer Relationship Management system working with CRUD functionality.',
       liveTestLink: 'Link zum Live-Test',
       githubLink: 'Link zum GitHub-Repo',
+    },
+    {
+      imageSrc: '../../assets/image/pokedex.png',
+      title: 'Pokedex',
+      technologies: 'JavaScript | HTML | CSS | API',
+      description:
+        'Based on the PokeAPI a simple library that provides and catalogues pokemon information.',
+      liveTestLink: 'https://pascal-huber.developerakademie.net/Pokedex/',
+      githubLink: 'https://github.com/HuberPascal/Pokedex',
     },
   ];
 

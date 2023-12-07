@@ -11,7 +11,7 @@
   <div class="background-section-img">
     <img src="../../assets/image/background-section.png" alt="" />
   </div>
-  <!--  -->
+
   <div class="above-the-fold-text-container">
     <div class="above-the-fold-titel">
       <div class="above-the-fold-left">
@@ -24,23 +24,23 @@
         </div>
       </div>
     </div>
-    <button>Let`s talk!</button>
+    <button (click)="scrollToSection('contact')">Let`s talk!</button>
   </div>
 
   <div class="social-Media-container">
     <div class="social-Media-left">
       <img src="../../assets/image/blue-line.png" alt="" />
       <div class="social-Media-icons">
-        <a href="#">
+        <a href="https://github.com/HuberPascal" target="_blank">
           <img
             src="../../assets/image/icons/aboveTheFold/github-icon.png"
-            alt=""
+            alt="GitHub-Icon"
           />
         </a>
-        <a href="#">
+        <a href="mailto:pascal.huber92@gmx.ch">
           <img
             src="../../assets/image/icons/aboveTheFold/mail-icon.png"
-            alt=""
+            alt="Email Icon"
           />
         </a>
         <a href="#">
@@ -52,7 +52,9 @@
       </div>
     </div>
 
-    <div class="social-Media-right">pascal.huber92&#64;gmx.ch</div>
+    <a href="mailto:pascal.huber92@gmx.ch" class="social-Media-right">
+      pascal.huber92&#64;gmx.ch
+    </a>
   </div>
 
   <div class="scroll-down-container">
