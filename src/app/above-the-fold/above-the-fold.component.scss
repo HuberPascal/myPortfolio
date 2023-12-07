@@ -13,8 +13,9 @@
 
 .character-photo {
   position: absolute;
-  top: 0;
+  top: 80px;
   left: 47px;
+  width: 646px;
 
   img {
     max-width: 100%;
@@ -25,6 +26,7 @@
 .background-section-img {
   position: absolute;
   top: 259px;
+  z-index: 1;
 
   img {
     width: 100vw;
@@ -61,6 +63,7 @@
   align-items: center;
   flex-direction: column;
   font-family: "Poppins", sans-serif;
+  z-index: 2;
 }
 
 .above-the-fold-titel {
