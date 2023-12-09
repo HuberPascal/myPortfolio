@@ -19,6 +19,7 @@ export class ContactFormComponent {
   showErrorMessageMail: boolean = false;
   showErrorMessageTextarea: boolean = false;
   privacyPolicyChecked: boolean = false;
+  isMailSend: boolean = false;
 
   onInputFocusName() {
     this.showImageName = true;
@@ -62,15 +63,13 @@ export class ContactFormComponent {
     }
   }
 
-  // Funktion zum Überprüfen, ob das Formular gültig ist
   isFormValid(): any {
-    // Überprüfe alle Bedingungen, um festzustellen, ob das Formular gültig ist
     return (
       this.inputValueName.length >= 5 &&
       this.isEmailValid() &&
       this.inputValueMessage.length >= 20 &&
       this.privacyPolicyChecked
-    ); // Hier wird die Eigenschaft verwendet, keine Funktion
+    );
   }
 
   isNameValid(): boolean {
@@ -91,13 +90,10 @@ export class ContactFormComponent {
     this.privacyPolicyChecked = !this.privacyPolicyChecked;
   }
 
-  // isPrivacyPolicyChecked(): boolean {
-  //   return this.privacyPolicyChecked;
-  // }
-
   sendMail(event: any) {
     event.preventDefault();
     const data = new FormData(event.target);
+    const form = event.target;
 
     fetch('https://formspree.io/f/mrgwwppr', {
       method: 'POST',
@@ -107,8 +103,21 @@ export class ContactFormComponent {
       },
     })
       .then(() => {
-        window.location.href = './send_mail.html';
+        this.isMailSend = true;
+
+        setTimeout(() => {
+          this.isMailSend = false;
+
+          this.inputFocusName = false;
+          this.inputValueName = '';
+          this.inputFocusMail = false;
+          this.inputValueMail = '';
+          this.inputFocusMessage = false;
+          this.inputValueMessage = '';
+          this.privacyPolicyChecked = false;
+        }, 5000);
       })
+
       .catch((error) => {
         console.log(error);
       });

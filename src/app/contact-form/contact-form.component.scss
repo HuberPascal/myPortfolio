@@ -215,6 +215,24 @@ button {
   border: 1px solid var(--blue) !important;
 }
 
-// .dNone {
-//   display: none;
-// }
+.wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sendMailMessage {
+  color: var(--green);
+  margin-top: 16px;
+  font-size: 20px;
+}
+
+.dNone {
+  display: none;
+}

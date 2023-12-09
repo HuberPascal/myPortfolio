@@ -1,16 +1,16 @@
 p {
   margin: 0;
   font-size: 23px;
-  color: #fff;
+  color: var(--white);
 }
 
 .footer-container {
   color: #fff;
   font-family: "Poppins", sans-serif;
-  background-color: #141d2f;
+  background-color: var(--dark-blue);
   box-sizing: border-box;
   height: 291px;
-  border-top: 4px solid #00bee8;
+  border-top: 4px solid var(--blue-light);
   padding: 0 100px;
 }
 
@@ -28,7 +28,7 @@ p {
   a {
     height: 40px;
     text-decoration: none;
-    color: #fff;
+    color: var(--white);
     cursor: pointer;
   }
 
@@ -54,17 +54,17 @@ p {
 }
 
 #Logo {
-  color: #fff;
+  color: var(--white);
   font-family: "Poppins", sans-serif;
   font-size: 40px;
   font-weight: 700;
   cursor: pointer;
 
   .first-letter {
-    color: #4b47ff;
+    color: var(--blue);
   }
 
   .second-letter {
-    color: #00bee8;
+    color: var(--blue-light);
   }
 }
