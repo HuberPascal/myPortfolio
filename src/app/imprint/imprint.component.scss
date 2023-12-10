@@ -15,10 +15,12 @@
 
 p {
   font-size: 16px;
+  line-height: 120%;
 }
 
 h3 {
   margin: 0;
+  margin-top: 16px;
 }
 
 .headline-container {
@@ -36,4 +38,8 @@ h3 {
       padding: 3px;
     }
   }
+}
+
+.source {
+  margin-top: 16px;
 }

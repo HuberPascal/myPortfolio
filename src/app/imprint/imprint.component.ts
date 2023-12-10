@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImprintComponent implements OnInit {
   ngOnInit() {
-    const body = document.querySelector('body');
-    if (body) {
-      body.scrollIntoView({ behavior: 'smooth' });
+    if (typeof document !== 'undefined') {
+      const body = document.querySelector('body');
+      if (body) {
+        body.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   }
 }

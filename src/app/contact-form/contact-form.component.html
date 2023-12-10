@@ -1,4 +1,5 @@
-<form (submit)="sendMail($event)" autocomplete="off">
+<!-- <form (submit)="sendMail($event)" autocomplete="off"> -->
+<form (submit)="test($event)" autocomplete="off">
   <div class="form-text-area">
     <div class="input-container-name">
       <input
@@ -116,7 +117,8 @@
         </div>
 
         <p>
-          I`ve read the <a href="#">privacy policy</a> and agree to the
+          I`ve read the
+          <a routerLink="/imprint">privacy policy</a> and agree to the
           processing of my data as outlined.
         </p>
       </div>
@@ -149,7 +151,11 @@
 
 <div
   class="sendMailMessage"
-  [ngClass]="{ wrapper: isMailSend, dNone: !isMailSend }"
+  [ngClass]="{
+    wrapper: isMailSend,
+    wrapperOut: fadeOutSendMessage,
+    dNone: !isMailSend,
+  }"
 >
   <span>Thank you! Your form has been successfully submitted.</span>
 </div>

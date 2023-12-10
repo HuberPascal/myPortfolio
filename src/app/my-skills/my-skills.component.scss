@@ -1,5 +1,6 @@
 p {
   font-size: 16px;
+  line-height: 120%;
   margin: 0;
   text-align: end;
   padding-right: 100px;
@@ -14,10 +15,8 @@ h1 {
   color: #fff;
   font-family: "Poppins", sans-serif;
   position: relative;
-  padding-top: 138px;
   background-color: var(--dark-blue);
   box-sizing: border-box;
-  height: calc(100vh - 114px);
 }
 
 .my-skill-section {
@@ -25,6 +24,7 @@ h1 {
   justify-content: space-between;
   gap: 100px;
   padding-left: 100px;
+  padding-bottom: 250px;
 }
 
 .my-skills-left {
@@ -136,4 +136,6 @@ button {
   height: 4px;
   background-color: var(--blue);
   width: 58px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }

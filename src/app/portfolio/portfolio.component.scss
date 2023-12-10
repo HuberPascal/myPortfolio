@@ -12,21 +12,11 @@ h1 {
   color: white;
   font-family: "Poppins", sans-serif;
   position: relative;
-  padding-top: 138px;
+  // padding-top: 138px;
   padding-bottom: 100px;
   background-color: #141d2f;
   box-sizing: border-box;
-  // height: calc(100vh - 114px);
   height: auto;
-
-  // opacity: 0;
-  // transform: translateY(20px);
-  // transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-
-  // &:focus-visible {
-  //   opacity: 1;
-  //   transform: translateY(0);
-  // }
 }
 
 .portfolio-titel-container {
@@ -63,16 +53,15 @@ h1 {
   justify-content: flex-end;
 }
 
-.center-headline-container {
-  flex-grow: 1 !important;
-  // max-width: 30% !important;
-}
 .blue-line-left {
   width: 30%;
+  border-radius: 10px;
 }
 
 .blue-line-right {
   width: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .portfolio-background-img-left {

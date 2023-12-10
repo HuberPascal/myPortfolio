@@ -26,7 +26,7 @@ export class ProjectsShowcaseComponent {
       githubLink: 'https://github.com/HuberPascal/El-pollo-loco',
     },
     {
-      imageSrc: '../../assets/image/join-photo.png',
+      imageSrc: '../../assets/image/join.png',
       title: 'Simple CRM',
       technologies: 'Angular | Firebase',
       description:
@@ -36,7 +36,7 @@ export class ProjectsShowcaseComponent {
     },
     {
       imageSrc: '../../assets/image/pokedex.png',
-      title: 'Pokedex',
+      title: 'Pokédex',
       technologies: 'JavaScript | HTML | CSS | API',
       description:
         'Based on the PokeAPI a simple library that provides and catalogues pokemon information.',

@@ -16,7 +16,7 @@ form {
 
   input,
   textarea {
-    padding: 15px 25px;
+    padding: 15px 60px 15px 25px;
     border-radius: 10px;
     background-color: var(--dark-blue);
     outline: none;
@@ -32,6 +32,7 @@ form {
 
   textarea {
     height: 200px;
+    resize: none;
   }
 }
 
@@ -215,16 +216,43 @@ button {
   border: 1px solid var(--blue) !important;
 }
 
+@keyframes fadeInSendMessage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@keyframes fadeOutSendMessage {
+  0% {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
 .wrapper {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0);
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  animation: fadeInSendMessage 0.3s ease-in-out forwards;
+}
+
+.wrapperOut {
+  animation: fadeOutSendMessage 0.3s ease-in-out forwards;
 }
 
 .sendMailMessage {

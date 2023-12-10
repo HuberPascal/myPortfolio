@@ -20,6 +20,7 @@ export class ContactFormComponent {
   showErrorMessageTextarea: boolean = false;
   privacyPolicyChecked: boolean = false;
   isMailSend: boolean = false;
+  fadeOutSendMessage: boolean = false;
 
   onInputFocusName() {
     this.showImageName = true;
@@ -106,20 +107,46 @@ export class ContactFormComponent {
         this.isMailSend = true;
 
         setTimeout(() => {
-          this.isMailSend = false;
+          this.fadeOutSendMessage = true;
 
-          this.inputFocusName = false;
-          this.inputValueName = '';
-          this.inputFocusMail = false;
-          this.inputValueMail = '';
-          this.inputFocusMessage = false;
-          this.inputValueMessage = '';
-          this.privacyPolicyChecked = false;
+          setTimeout(() => {
+            this.isMailSend = false;
+            this.fadeOutSendMessage = false;
+
+            this.inputFocusName = false;
+            this.inputValueName = '';
+            this.inputFocusMail = false;
+            this.inputValueMail = '';
+            this.inputFocusMessage = false;
+            this.inputValueMessage = '';
+            this.privacyPolicyChecked = false;
+          }, 300);
         }, 5000);
       })
 
       .catch((error) => {
         console.log(error);
       });
+  }
+
+  test(event: any) {
+    this.isMailSend = true;
+
+    setTimeout(() => {
+      this.fadeOutSendMessage = true;
+
+      setTimeout(() => {
+        this.isMailSend = false;
+        this.fadeOutSendMessage = false;
+
+        this.inputFocusName = false;
+        this.inputValueName = '';
+        this.inputFocusMail = false;
+        this.inputValueMail = '';
+        this.inputFocusMessage = false;
+        this.inputValueMessage = '';
+        this.privacyPolicyChecked = false;
+      }, 300);
+    }, 5000);
   }
 }

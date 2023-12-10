@@ -26,16 +26,19 @@ span {
   color: var(--white);
   font-family: "Poppins", sans-serif;
   padding-top: 138px;
-  padding-bottom: 235px;
+  padding-bottom: 300px;
   background-color: var(--dark-blue);
   box-sizing: border-box;
   height: auto;
+  position: relative;
 }
 
 .blue-line {
   height: 4px;
   background-color: var(--blue);
   width: 50px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .contact-titel {
@@ -58,4 +61,19 @@ span {
   justify-content: space-between;
   margin: 0 100px;
   margin-top: 100px;
+}
+
+.goUpButton {
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
+  width: 39px;
+  height: 39px;
+  cursor: pointer;
+  background-image: url("../../assets/image/icons/contact/go-up-button.png");
+  transition: background-image 0.2s ease;
+
+  &:hover {
+    background-image: url("../../assets/image/icons/contact/go-up-button-hover.png");
+  }
 }
