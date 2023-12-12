@@ -27,12 +27,24 @@
   transform: translate(-50%);
   z-index: 0;
   object-fit: cover;
+
+  @media (max-width: 1050px) {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+  }
 }
 
 .relativ {
   position: relative;
   height: 100%;
   display: flex;
+
+  @media (max-width: 1050px) {
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 .character-photo {

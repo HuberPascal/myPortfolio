@@ -10,6 +10,10 @@ header {
   left: 0;
   right: 0;
   z-index: 999;
+
+  @media (max-width: 1050px) {
+    padding: 37px 25px;
+  }
 }
 
 #Logo {
