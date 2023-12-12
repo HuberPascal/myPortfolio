@@ -14,7 +14,7 @@ h1 {
   color: white;
   font-family: "Poppins", sans-serif;
   position: relative;
-  padding-top: 138px;
+  padding-top: 240px;
   background-color: #141d2f;
   box-sizing: border-box;
   height: auto;
@@ -25,7 +25,6 @@ h1 {
   justify-content: space-between;
   padding-left: 100px;
   padding-bottom: 250px;
-  gap: 100px;
 }
 
 .about-me-left-text-container {
@@ -44,19 +43,12 @@ h1 {
 .about-me-left {
   display: flex;
   flex-direction: column;
-  // flex: 1;
   align-items: center;
   max-width: 600px;
   z-index: 2;
 }
 
 .about-me-right {
-  // display: flex;
-  // flex-direction: row;
-  // justify-content: flex-end;
-  // align-items: center;
-  // flex: 1;
-  // height: 100%;
   z-index: 2;
 }
 
@@ -93,18 +85,6 @@ h1 {
   justify-content: flex-end;
   align-items: center;
 }
-//   height: 100%;
-//   position: relative;
-//   overflow: hidden;
-
-//   img {
-//     width: 100%;
-//     height: 100%;
-//     z-index: 2;
-//     object-fit: cover;
-//     position: relative;
-//   }
-// }
 
 .absolut {
   position: absolute;
@@ -113,8 +93,6 @@ h1 {
   width: 403px;
   height: 403px;
   z-index: 1;
-  // max-width: 453px;
-  // max-height: 453px;
 
   img {
     width: 100%;
@@ -131,13 +109,9 @@ h1 {
   width: 270px;
   max-width: 30%;
 
-  // @media (max-width: 1650px) {
-  //   width: 240px;
-  // }
-
-  // @media (max-width: 1500px) {
-  //   width: 180px;
-  // }
+  @media (max-width: 1600px) {
+    max-width: 22%;
+  }
 }
 
 .about-me-background-img {
