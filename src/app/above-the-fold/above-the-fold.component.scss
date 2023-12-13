@@ -274,6 +274,10 @@
       transform: scale(1.1);
       background-color: var(--blue);
     }
+
+    @media (max-width: 450px) {
+      font-size: 16px;
+    }
   }
 
   @media (max-width: 1050px) {

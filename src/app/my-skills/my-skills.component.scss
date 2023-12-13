@@ -3,12 +3,35 @@ p {
   line-height: 120%;
   margin: 0;
   text-align: end;
-  padding-right: 100px;
 }
 
 h1 {
   font-size: 90px;
   margin: 0;
+
+  @media (max-width: 1550px) {
+    font-size: 70px;
+  }
+
+  @media (max-width: 1200px) {
+    font-size: 60px;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 60px;
+  }
+
+  @media (max-width: 530px) {
+    font-size: 53px;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 46px;
+  }
+
+  @media (max-width: 395px) {
+    font-size: 40px;
+  }
 }
 
 #my-skills {
@@ -25,6 +48,15 @@ h1 {
   gap: 100px;
   padding-left: 100px;
   padding-bottom: 250px;
+
+  @media (max-width: 1400px) {
+    gap: 70px;
+  }
+
+  @media (max-width: 1050px) {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
 }
 
 .my-skills-left {
@@ -32,6 +64,17 @@ h1 {
   flex-direction: column;
   gap: 54px;
   flex-wrap: wrap;
+
+  @media (max-width: 1050px) {
+    padding: 0 25px;
+  }
+}
+
+.my-skills-right {
+  @media (max-width: 1050px) {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 .icons-bar {
@@ -40,6 +83,68 @@ h1 {
   gap: 123px;
   width: 721px;
   z-index: 2;
+
+  img {
+    @media (max-width: 600px) {
+      transform: scale(0.9);
+    }
+
+    @media (max-width: 500px) {
+      transform: scale(0.8);
+    }
+
+    @media (max-width: 450px) {
+      transform: scale(0.7);
+    }
+
+    @media (max-width: 390px) {
+      transform: scale(0.6);
+    }
+  }
+
+  @media (max-width: 1500px) {
+    gap: 100px;
+  }
+
+  @media (max-width: 1400px) {
+    gap: 80px;
+  }
+
+  @media (max-width: 1300px) {
+    width: 600px;
+  }
+
+  @media (max-width: 1200px) {
+    width: 440px;
+  }
+
+  @media (max-width: 1050px) {
+    width: 592px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 650px) {
+    gap: 65px;
+  }
+
+  @media (max-width: 600px) {
+    width: 394px;
+  }
+
+  @media (max-width: 450px) {
+    gap: 40px;
+    width: 344px;
+  }
+
+  @media (max-width: 390px) {
+    gap: 30px;
+    width: 324px;
+  }
+
+  @media (max-width: 365px) {
+    gap: 24px;
+    width: 312px;
+  }
 }
 
 .my-skill-text-container {
@@ -47,7 +152,28 @@ h1 {
   flex-direction: column;
   gap: 34px;
   padding-top: 110px;
+  padding-right: 100px;
   position: relative;
+  max-width: 600px;
+
+  @media (max-width: 1200px) {
+    max-width: 450px;
+  }
+
+  @media (max-width: 1050px) {
+    position: static;
+  }
+
+  @media (max-width: 700px) {
+    padding-right: 50px;
+    padding-left: 25px;
+    padding-top: 30px;
+  }
+
+  @media (max-width: 450px) {
+    padding-right: 25px;
+    padding-top: 0;
+  }
 }
 
 button {
@@ -71,6 +197,14 @@ button {
     transform: translateX(50%) scale(1.1);
     background-color: var(--blue);
   }
+
+  @media (max-width: 1050px) {
+    bottom: -150px;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 16px;
+  }
 }
 
 .my-skills-titel {
@@ -79,6 +213,11 @@ button {
   justify-content: flex-end;
   align-items: center;
   gap: 42px;
+  position: relative;
+
+  @media (max-width: 600px) {
+    gap: 20px;
+  }
 }
 
 .skill-item {
@@ -99,6 +238,10 @@ button {
     font-size: 16px;
     font-weight: 700;
     font-family: "Poppins", sans-serif;
+
+    @media (max-width: 450px) {
+      font-size: 14px;
+    }
   }
 
   &:hover img {
@@ -138,4 +281,16 @@ button {
   width: 58px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  position: absolute;
+  right: -100px;
+
+  @media (max-width: 700px) {
+    width: 30px;
+    right: -50px;
+  }
+
+  @media (max-width: 450px) {
+    width: 20px;
+    right: -25px;
+  }
 }
