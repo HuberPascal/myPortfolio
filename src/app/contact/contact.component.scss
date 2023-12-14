@@ -53,12 +53,15 @@ span {
 #contact {
   color: var(--white);
   font-family: "Poppins", sans-serif;
-  // padding-top: 138px;
   padding-bottom: 300px;
   background-color: var(--dark-blue);
   box-sizing: border-box;
   height: auto;
   position: relative;
+
+  @media (max-width: 500px) {
+    padding-bottom: 200px;
+  }
 }
 
 .blue-line {
@@ -127,5 +130,9 @@ span {
 
   @media (max-width: 1050px) {
     right: 25px;
+  }
+
+  @media (max-width: 500px) {
+    bottom: 50px;
   }
 }
