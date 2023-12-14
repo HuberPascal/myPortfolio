@@ -1,11 +1,16 @@
 p {
   font-size: 14px;
   margin: 0;
+  line-height: 120%;
 }
 
 form {
   display: flex;
   flex-direction: column;
+
+  // @media (max-width: 1050px) {
+  //   width: 480px;
+  // }
 }
 
 .form-text-area {
@@ -51,6 +56,10 @@ button {
   &:enabled:hover {
     transform: scale(1.1);
     background-color: var(--blue) !important;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 16px;
   }
 }
 
@@ -142,6 +151,7 @@ button {
   top: 95px;
   left: 50%;
   transform: translate(-50%);
+  white-space: nowrap;
 }
 
 @keyframes fadeIn {
@@ -259,6 +269,16 @@ button {
   color: var(--green);
   margin-top: 16px;
   font-size: 20px;
+
+  span {
+    width: 60%;
+    text-align: center;
+    line-height: 120%;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 16px;
+  }
 }
 
 .dNone {
