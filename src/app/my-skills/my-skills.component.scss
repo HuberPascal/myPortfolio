@@ -5,41 +5,11 @@ p {
   text-align: end;
 }
 
-h1 {
-  font-size: 90px;
-  font-weight: 700;
-  margin: 0;
-
-  @media (max-width: 1550px) {
-    font-size: 70px;
-  }
-
-  @media (max-width: 1200px) {
-    font-size: 60px;
-  }
-
-  @media (max-width: 700px) {
-    font-size: 60px;
-  }
-
-  @media (max-width: 530px) {
-    font-size: 53px;
-  }
-
-  @media (max-width: 450px) {
-    font-size: 46px;
-  }
-
-  @media (max-width: 395px) {
-    font-size: 40px;
-  }
-}
-
 #my-skills {
   color: #fff;
   font-family: "Poppins", sans-serif;
   position: relative;
-  background-color: var(--dark-blue);
+  background-color: var(--midnight-blue);
   box-sizing: border-box;
 }
 
@@ -195,7 +165,7 @@ button {
   padding: 15px 30px;
   border-radius: 10px;
   color: #ffffff;
-  background-color: var(--blue-light);
+  background-color: var(--aqua-blue);
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
   border: none;
   box-sizing: border-box;
@@ -204,7 +174,7 @@ button {
 
   &:hover {
     transform: translateX(50%) scale(1.1);
-    background-color: var(--blue);
+    background-color: var(--vibrant-blue);
   }
 
   @media (max-width: 1050px) {
@@ -286,7 +256,7 @@ button {
 
 .blue-line {
   height: 4px;
-  background-color: var(--blue);
+  background-color: var(--vibrant-blue);
   width: 58px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;

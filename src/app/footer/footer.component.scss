@@ -1,15 +1,15 @@
 p {
   margin: 0;
   font-size: 23px;
-  color: var(--white);
+  color: var(--pure-white);
 }
 
 footer {
   color: #fff;
   font-family: "Poppins", sans-serif;
-  background-color: var(--dark-blue);
+  background-color: var(--midnight-blue);
   box-sizing: border-box;
-  border-top: 4px solid var(--blue-light);
+  border-top: 4px solid var(--aqua-blue);
 
   @media (max-width: 1050px) {
     height: 100%;
@@ -41,7 +41,7 @@ footer {
   a {
     height: 40px;
     text-decoration: none;
-    color: var(--white);
+    color: var(--pure-white);
     cursor: pointer;
   }
 
@@ -71,18 +71,18 @@ footer {
 }
 
 #Logo {
-  color: var(--white);
+  color: var(--pure-white);
   font-family: "Poppins", sans-serif;
   font-size: 40px;
   font-weight: 700;
   cursor: pointer;
 
   .first-letter {
-    color: var(--blue);
+    color: var(--vibrant-blue);
   }
 
   .second-letter {
-    color: var(--blue-light);
+    color: var(--aqua-blue);
   }
 }
 
@@ -99,7 +99,7 @@ footer {
 
   a {
     text-decoration: none;
-    color: var(--white);
+    color: var(--pure-white);
     cursor: pointer;
   }
 
