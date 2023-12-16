@@ -50,7 +50,7 @@ header {
     cursor: pointer;
 
     &:hover {
-      color: #00bee8;
+      color: var(--blue-light);
 
       &:after {
         content: "";
@@ -62,11 +62,19 @@ header {
         background-color: var(--blue);
         opacity: 0;
         animation: fadeIn 200ms linear forwards;
+        border-radius: 10px;
       }
+    }
+
+    @media (max-width: 1050px) {
+      display: none;
     }
   }
 
   @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
     to {
       opacity: 1;
     }
@@ -87,5 +95,17 @@ header {
 
   a {
     min-width: 0;
+  }
+
+  @media (max-width: 1050px) {
+    display: none;
+  }
+}
+
+app-burger-menu {
+  display: none;
+
+  @media (max-width: 1050px) {
+    display: block;
   }
 }

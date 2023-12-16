@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Injector } from '@angular/core';
 import { ScrollService } from '../scroll.service';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-my-skills',
@@ -7,8 +8,15 @@ import { ScrollService } from '../scroll.service';
   styleUrl: './my-skills.component.scss',
 })
 export class MySkillsComponent implements OnInit {
+  private appComponent: AppComponent;
   scrolled: boolean = false;
-  constructor(private scrollService: ScrollService) {}
+
+  constructor(
+    private scrollService: ScrollService,
+    private injector: Injector
+  ) {
+    this.appComponent = this.injector.get(AppComponent);
+  }
 
   ngOnInit() {
     this.scrollService.scrollEvent.subscribe((sectionId) => {
@@ -17,10 +25,7 @@ export class MySkillsComponent implements OnInit {
   }
 
   scrollToSection(sectionId: string) {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    this.appComponent.scrollToSection(sectionId);
   }
 
   mySkillsIcons: string[] = [

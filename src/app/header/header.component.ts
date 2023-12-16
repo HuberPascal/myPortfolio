@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { ScrollService } from '../scroll.service';
+import { Component, Injector } from '@angular/core';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-header',
@@ -7,10 +7,14 @@ import { ScrollService } from '../scroll.service';
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-  constructor(private scrollService: ScrollService) {}
+  private appComponent: AppComponent;
+
+  constructor(private injector: Injector) {
+    this.appComponent = this.injector.get(AppComponent);
+  }
 
   scrollToSection(sectionId: string) {
-    this.scrollService.scrollToSection(sectionId);
+    this.appComponent.scrollToSection(sectionId);
   }
 
   scrollToTop() {

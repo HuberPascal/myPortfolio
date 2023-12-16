@@ -1,0 +1,16 @@
+<div
+  class="hamburger hamburger-icon-container"
+  [ngClass]="{ 'hamburger-active': isActive }"
+  (click)="toggleMenu()"
+>
+  <span class="hamburger-icon"></span>
+</div>
+
+<nav [ngClass]="{ 'active-menu': isActive, 'noActive-menu': !isActive }">
+  <ul>
+    <li><a (click)="scrollToSection('about-me')">About me</a></li>
+    <li><a (click)="scrollToSection('my-skills')">Skills</a></li>
+    <li><a (click)="scrollToSection('portfolio')">Portfolio</a></li>
+    <li><a (click)="scrollToSection('contact')">Contact</a></li>
+  </ul>
+</nav>

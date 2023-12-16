@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { ScrollService } from '../scroll.service';
+import { Component, Injector } from '@angular/core';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-above-the-fold',
@@ -7,9 +7,13 @@ import { ScrollService } from '../scroll.service';
   styleUrl: './above-the-fold.component.scss',
 })
 export class AboveTheFoldComponent {
-  constructor(private scrollService: ScrollService) {}
+  private appComponent: AppComponent;
+
+  constructor(private injector: Injector) {
+    this.appComponent = this.injector.get(AppComponent);
+  }
 
   scrollToSection(sectionId: string) {
-    this.scrollService.scrollToSection(sectionId);
+    this.appComponent.scrollToSection(sectionId);
   }
 }

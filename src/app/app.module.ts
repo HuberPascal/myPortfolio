@@ -18,6 +18,7 @@ import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { LayoutComponent } from './layout/layout.component';
+import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { LayoutComponent } from './layout/layout.component';
     FooterComponent,
     ImprintComponent,
     LayoutComponent,
+    BurgerMenuComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideClientHydration()],
