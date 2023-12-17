@@ -11,11 +11,11 @@
       <li><a (click)="scrollToSection('my-skills')">Skills</a></li>
       <li><a (click)="scrollToSection('portfolio')">Portfolio</a></li>
     </ul>
-    <!-- <div class="language-switch">
-      <a href="#">DE</a>
+    <div class="language-switch">
+      <a (click)="translate.use('de')">DE</a>
       <div class="translate-line"></div>
-      <a href="#">EN</a>
-    </div> -->
+      <a (click)="translate.use('en')">EN</a>
+    </div>
     <app-burger-menu></app-burger-menu>
   </nav>
 </header>
