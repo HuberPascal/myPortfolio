@@ -59,7 +59,7 @@ button {
   }
 }
 
-.form-send {
+.form-submit-section {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -137,7 +137,7 @@ button {
   }
 }
 
-.checkbox-container .icon-img {
+.checkbox-container .input-validation-icon {
   width: 24px;
   height: 24px;
 }
@@ -197,28 +197,28 @@ button {
   }
 }
 
-.icon-img {
+.input-validation-icon {
   position: absolute;
   top: 25px;
   right: 25px;
   transform: translateY(-50%);
 }
 
-.icon-img-textarea {
+.input-validation-icon-textarea-textarea {
   position: absolute;
   top: 15px;
   right: 25px;
 }
 
-.green-border {
+.valid-border {
   border: 1px solid var(--lime-green) !important;
 }
 
-.red-border {
+.error-border {
   border: 1px solid var(--raspberry-red) !important;
 }
 
-.blue-border {
+.default-border {
   border: 1px solid var(--vibrant-blue) !important;
 }
 
@@ -243,7 +243,7 @@ button {
   }
 }
 
-.wrapper {
+.message-visible {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -257,7 +257,7 @@ button {
   animation: fadeInSendMessage 0.3s ease-in-out forwards;
 }
 
-.wrapperOut {
+.message-fade-out {
   animation: fadeOutSendMessage 0.3s ease-in-out forwards;
 }
 
@@ -277,6 +277,6 @@ button {
   }
 }
 
-.dNone {
+.message-hidden {
   display: none;
 }

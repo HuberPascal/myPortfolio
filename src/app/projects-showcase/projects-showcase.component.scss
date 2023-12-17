@@ -58,7 +58,7 @@ p {
   transform: scaleX(-1);
 }
 
-.project {
+.project-details {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -77,7 +77,7 @@ p {
   }
 }
 
-.projects-left {
+.project-image-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,7 +93,7 @@ p {
   }
 }
 
-.projects-right {
+.project-details-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -137,7 +137,7 @@ p {
   }
 }
 
-.live-test-btn {
+.btn-live-test {
   padding: 15px 30px;
   color: #ffffff;
   font-size: 23px;
@@ -150,7 +150,7 @@ p {
   }
 }
 
-.github-btn {
+.btn-github {
   padding: 15px 30px;
   color: #ffffff;
   font-size: 23px;

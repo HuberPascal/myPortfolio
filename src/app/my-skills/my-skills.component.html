@@ -1,25 +1,24 @@
 <div id="my-skills">
-  <div class="my-skill-section" [ngClass]="{ animation: scrolled }">
-    <div class="my-skills-left">
-      <div class="icons-bar">
+  <div class="skills-container" [ngClass]="{ animation: scrolled }">
+    <div class="skills-icons-container">
+      <div class="skills-icons-bar">
         <div
           *ngFor="let icon of mySkillsIcons; let i = index"
-          class="skill-item"
+          class="skill-icon-item"
         >
           <img
-            src="../../assets/image/icons/mySkills/{{ icon }}"
+            src="assets/image/icons/mySkills/{{ icon }}"
             alt="{{ skills[i] }} Icon"
           />
           <span>{{ skills[i] }}</span>
         </div>
       </div>
     </div>
-    <div class="my-skills-right">
+    <div class="skills-description-container">
       <div class="my-skill-text-container">
-        <div class="my-skills-titel">
+        <div class="skills-title">
           <h1>My skills</h1>
-          <!-- <img src="../../assets/image/blue-line-my-skills.png" alt="" /> -->
-          <div class="blue-line"></div>
+          <div class="decorative-line"></div>
         </div>
 
         <p>
@@ -30,7 +29,7 @@
       </div>
     </div>
   </div>
-  <div class="my-skills-background-img">
-    <img src="../../assets/image/background-my-skills.png" alt="" />
+  <div class="skills-background-image">
+    <img src="assets/image/background-my-skills.png" alt="Hintergrundbild" />
   </div>
 </div>

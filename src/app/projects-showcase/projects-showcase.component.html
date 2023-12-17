@@ -3,20 +3,20 @@
   *ngFor="let project of projects; let i = index"
   [ngClass]="getCssClasses(i)"
 >
-  <div [ngClass]="getMirroredClasses(i)" class="projects-left">
+  <div [ngClass]="getMirroredClasses(i)" class="project-image-container">
     <img [src]="project.imageSrc" alt="" />
   </div>
-  <div class="projects-right">
-    <div class="project">
+  <div class="project-details-container">
+    <div class="project-details">
       <h4 [ngClass]="getMirroredClasses(i)">{{ project.title }}</h4>
       <span [ngClass]="getMirroredClasses(i)">{{ project.technologies }}</span>
       <p [ngClass]="getMirroredClasses(i)">{{ project.description }}</p>
     </div>
     <div [ngClass]="getMirroredBtnClasses(i)" class="project-btn-container">
-      <a class="live-test-btn" [href]="project.liveTestLink" target="_blank"
+      <a class="btn-live-test" [href]="project.liveTestLink" target="_blank"
         >Live test</a
       >
-      <a class="github-btn" [href]="project.githubLink" target="_blank"
+      <a class="btn-github" [href]="project.githubLink" target="_blank"
         >Github</a
       >
     </div>

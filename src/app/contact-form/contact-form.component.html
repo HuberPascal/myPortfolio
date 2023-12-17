@@ -5,10 +5,10 @@
       <input
         [(ngModel)]="inputValueName"
         [ngClass]="{
-          'red-border': inputFocusName && inputValueName.length < 5,
-          'green-border':
+          'error-border': inputFocusName && inputValueName.length < 5,
+          'valid-border':
             inputFocusName && inputValueName && inputValueName.length >= 5,
-          'blue-border': !inputFocusName && !inputValueName
+          'default-border': !inputFocusName && !inputValueName
         }"
         type="text"
         name="name"
@@ -18,15 +18,15 @@
       />
       <img
         *ngIf="showImageName && inputFocusName && inputValueName.length < 5"
-        src="../../assets/image/icons/contact/mistake-icon.png"
+        src="assets/image/icons/contact/mistake-icon.png"
         alt=""
-        class="icon-img"
+        class="input-validation-icon"
       />
       <img
         *ngIf="showImageName && inputFocusName && inputValueName.length >= 5"
-        src="../../assets/image/icons/contact/correct-icon.png"
+        src="assets/image/icons/contact/correct-icon.png"
         alt=""
-        class="icon-img"
+        class="input-validation-icon"
       />
       <div class="required" *ngIf="inputFocusName && inputValueName.length < 5">
         <p>Your name is required</p>
@@ -37,9 +37,9 @@
       <input
         [(ngModel)]="inputValueMail"
         [ngClass]="{
-          'red-border': inputFocusMail && !isEmailValid(),
-          'green-border': inputFocusMail && inputValueMail && isEmailValid(),
-          'blue-border': !inputFocusMail && !inputValueMail
+          'error-border': inputFocusMail && !isEmailValid(),
+          'valid-border': inputFocusMail && inputValueMail && isEmailValid(),
+          'default-border': !inputFocusMail && !inputValueMail
         }"
         type="email"
         name="email"
@@ -49,17 +49,17 @@
       />
       <img
         *ngIf="showImageMail && inputFocusMail && !isEmailValid()"
-        src="../../assets/image/icons/contact/mistake-icon.png"
+        src="assets/image/icons/contact/mistake-icon.png"
         alt=""
-        class="icon-img"
+        class="input-validation-icon"
       />
       <img
         *ngIf="
           showImageMail && inputFocusMail && inputValueMail && isEmailValid()
         "
-        src="../../assets/image/icons/contact/correct-icon.png"
+        src="assets/image/icons/contact/correct-icon.png"
         alt=""
-        class="icon-img"
+        class="input-validation-icon"
       />
       <div class="required" *ngIf="inputFocusMail && !isEmailValid()">
         <p>Your email is required</p>
@@ -69,12 +69,12 @@
       <textarea
         [(ngModel)]="inputValueMessage"
         [ngClass]="{
-          'red-border': inputFocusMessage && inputValueMessage.length < 20,
-          'green-border':
+          'error-border': inputFocusMessage && inputValueMessage.length < 20,
+          'valid-border':
             inputFocusMessage &&
             inputValueMessage &&
             inputValueMessage.length >= 20,
-          'blue-border': !inputFocusMessage && !inputValueMessage
+          'default-border': !inputFocusMessage && !inputValueMessage
         }"
         name="message"
         placeholder="Your message"
@@ -85,9 +85,9 @@
         *ngIf="
           showImageMessage && inputFocusMessage && inputValueMessage.length < 20
         "
-        src="../../assets/image/icons/contact/mistake-icon.png"
+        src="assets/image/icons/contact/mistake-icon.png"
         alt=""
-        class="icon-img-textarea"
+        class="input-validation-icon-textarea-textarea"
       />
       <img
         *ngIf="
@@ -96,9 +96,9 @@
           inputValueMessage &&
           inputValueMessage.length >= 20
         "
-        src="../../assets/image/icons/contact/correct-icon.png"
+        src="assets/image/icons/contact/correct-icon.png"
         alt=""
-        class="icon-img-textarea"
+        class="input-validation-icon-textarea-textarea"
       />
       <div class="required" *ngIf="inputFocusMessage && !isMessageValid()">
         <p>Your message is empty or less than 20 characters</p>
@@ -106,7 +106,7 @@
     </div>
   </div>
 
-  <div class="form-send">
+  <div class="form-submit-section">
     <div class="checkbox-section">
       <div class="checkbox-container">
         <div class="checkbox" (click)="toggleCheckbox()">
@@ -152,9 +152,9 @@
 <div
   class="sendMailMessage"
   [ngClass]="{
-    wrapper: isMailSend,
-    wrapperOut: fadeOutSendMessage,
-    dNone: !isMailSend,
+    'message-visible': isMailSend,
+    'message-fade-out': fadeOutSendMessage,
+    'message-hidden': !isMailSend,
   }"
 >
   <span>Thank you! Your form has been successfully submitted.</span>

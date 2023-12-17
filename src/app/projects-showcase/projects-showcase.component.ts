@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class ProjectsShowcaseComponent {
   projects = [
     {
-      imageSrc: '../../assets/image/join.png',
+      imageSrc: 'assets/image/join.png',
       title: 'Join',
       technologies: 'JavaScript | HTML | CSS',
       description:
@@ -17,7 +17,7 @@ export class ProjectsShowcaseComponent {
       githubLink: 'https://github.com/HuberPascal/Join-Privat/',
     },
     {
-      imageSrc: '../../assets/image/Pollo-loco.png',
+      imageSrc: 'assets/image/Pollo-loco.png',
       title: 'El pollo loco',
       technologies: 'JavaScript | HTML | CSS',
       description:
@@ -26,7 +26,7 @@ export class ProjectsShowcaseComponent {
       githubLink: 'https://github.com/HuberPascal/El-pollo-loco',
     },
     {
-      imageSrc: '../../assets/image/join.png',
+      imageSrc: 'assets/image/join.png',
       title: 'Simple CRM',
       technologies: 'Angular | Firebase',
       description:
@@ -35,7 +35,7 @@ export class ProjectsShowcaseComponent {
       githubLink: 'Link zum GitHub-Repo',
     },
     {
-      imageSrc: '../../assets/image/pokedex.png',
+      imageSrc: 'assets/image/pokedex.png',
       title: 'Pokédex',
       technologies: 'JavaScript | HTML | CSS | API',
       description:

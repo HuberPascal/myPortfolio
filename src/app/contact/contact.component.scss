@@ -34,7 +34,7 @@ span {
   }
 }
 
-.blue-line {
+.decorative-line {
   height: 4px;
   background-color: var(--vibrant-blue);
   width: 50px;
@@ -42,7 +42,7 @@ span {
   border-bottom-right-radius: 10px;
 }
 
-.contact-titel {
+.contact-title {
   display: flex;
   align-items: center;
   gap: 50px;
@@ -84,7 +84,7 @@ span {
   }
 }
 
-.goUpButton {
+.scroll-to-top-button {
   position: absolute;
   right: 100px;
   bottom: 100px;

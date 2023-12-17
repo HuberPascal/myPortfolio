@@ -13,7 +13,7 @@ p {
   box-sizing: border-box;
 }
 
-.my-skill-section {
+.skills-container {
   display: flex;
   justify-content: space-between;
   gap: 100px;
@@ -39,7 +39,7 @@ p {
   }
 }
 
-.my-skills-left {
+.skills-icons-container {
   display: flex;
   flex-direction: column;
   gap: 54px;
@@ -50,14 +50,14 @@ p {
   }
 }
 
-.my-skills-right {
+.skills-description-container {
   @media (max-width: 1050px) {
     display: flex;
     justify-content: flex-end;
   }
 }
 
-.icons-bar {
+.skills-icons-bar {
   display: flex;
   flex-wrap: wrap;
   gap: 123px;
@@ -186,7 +186,7 @@ button {
   }
 }
 
-.my-skills-titel {
+.skills-title {
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -199,7 +199,7 @@ button {
   }
 }
 
-.skill-item {
+.skill-icon-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -244,7 +244,7 @@ button {
   }
 }
 
-.my-skills-background-img {
+.skills-background-image {
   z-index: 1;
   img {
     position: absolute;
@@ -254,7 +254,7 @@ button {
   }
 }
 
-.blue-line {
+.decorative-line {
   height: 4px;
   background-color: var(--vibrant-blue);
   width: 58px;

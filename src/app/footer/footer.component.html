@@ -1,41 +1,38 @@
 <footer>
-  <div class="footer">
+  <div class="footer-container">
     <div class="footer-logo-container">
-      <div id="Logo" (click)="scrollToTop()">
-        Pa<span class="first-letter">s</span
-        ><span class="second-letter">c</span>al
+      <div id="footer-logo" (click)="scrollToTop()">
+        Pa<span class="logo-highlight-first-letter">s</span
+        ><span class="logo-highlight-second-letter">c</span>al
       </div>
-      <div class="imprint-top">
+      <div class="footer-imprint-link-top">
         <a routerLink="/imprint">Imprint</a>
       </div>
     </div>
-    <div>
+    <div class="footer-copyright">
       <p>&copy; Pascal Huber 2023</p>
     </div>
-    <div class="footer-icons-container">
+    <div class="footer-social-icons">
       <a href="https://github.com/HuberPascal" target="_blank">
         <img
-          src="../../assets/image/icons/footer/github-icon.png"
+          src="assets/image/icons/footer/github-icon.png"
           alt="Github Icon"
         />
       </a>
       <a href="mailto:pascal.huber92@gmx.ch">
-        <img
-          src="../../assets/image/icons/footer/mail-icon.png"
-          alt="Email Icon"
-        />
+        <img src="assets/image/icons/footer/mail-icon.png" alt="Email Icon" />
       </a>
       <a
         href="https://www.linkedin.com/in/pascal-huber-1851a82a3/"
         target="_blank"
       >
         <img
-          src="../../assets/image/icons/footer/linkedin-icon.png"
+          src="assets/image/icons/footer/linkedin-icon.png"
           alt="LinkedIn Icon"
         />
       </a>
     </div>
-    <div class="imprint-bottom">
+    <div class="footer-imprint-link-bottom">
       <a routerLink="/imprint">Imprint</a>
     </div>
   </div>

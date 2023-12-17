@@ -16,27 +16,34 @@ header {
   }
 }
 
-#Logo {
+#logo {
   color: #fff;
   font-family: "Poppins", sans-serif;
   font-size: 40px;
   font-weight: 700;
   cursor: pointer;
 
-  .first-letter {
+  .logo-highlight-first-letter {
     color: var(--vibrant-blue);
   }
 
-  .second-letter {
+  .logo-highlight-second-letter {
     color: var(--aqua-blue);
   }
 }
 
-.header-right {
+nav {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 29px;
+  gap: 30px;
+
+  ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 
   a {
     text-decoration: none;
@@ -81,7 +88,7 @@ header {
   }
 }
 
-.translate {
+.language-switch {
   display: flex;
   justify-content: center;
   align-items: center;

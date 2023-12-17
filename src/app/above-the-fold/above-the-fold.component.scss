@@ -7,7 +7,7 @@
   background-color: var(--midnight-blue);
 }
 
-.above-the-fold-section {
+.hero-section {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -37,7 +37,7 @@
   }
 }
 
-.relativ {
+.hero-image-container {
   position: relative;
   height: 100%;
   display: flex;
@@ -48,7 +48,7 @@
   }
 }
 
-.character-photo {
+.profile-photo {
   padding-top: 80px;
   width: 600px;
   overflow: hidden;
@@ -90,11 +90,11 @@
   }
 }
 
-.name-container {
+.hero-name-container {
   display: flex;
 }
 
-.background-section-img {
+.background-image {
   background-image: url("../../assets/image/background-section.png");
   background-size: cover;
   position: absolute;
@@ -165,7 +165,7 @@
   }
 }
 
-.above-the-fold-text-container h1 {
+.hero-text-container h1 {
   font-size: 90px;
   font-weight: 700;
   margin: 0;
@@ -192,7 +192,7 @@
   }
 }
 
-.above-the-fold-text-container h2 {
+.hero-text-container h2 {
   font-size: 75px;
   font-weight: 400;
   margin: 0;
@@ -220,7 +220,7 @@
   }
 }
 
-.above-the-fold-text-container h3 {
+.hero-text-container h3 {
   font-size: 48px;
   font-weight: 400;
   margin: 0;
@@ -247,7 +247,7 @@
   }
 }
 
-.above-the-fold-text-container {
+.hero-text-container {
   display: flex;
   justify-content: center;
   font-family: "Poppins", sans-serif;
@@ -255,7 +255,7 @@
   padding-top: 150px;
 }
 
-.above-the-fold-titel {
+.hero-title-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -304,20 +304,21 @@
   }
 }
 
-.above-the-fold-right {
+.hero-title-right {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   gap: 6px;
 }
 
-.above-the-fold-left {
+.hero-title-left {
   display: flex;
   transform: rotate(-90deg);
   align-items: center;
+  margin-left: -20px;
 }
 
-.social-Media-container {
+.social-media-container {
   display: flex;
   align-items: center;
   gap: 42px;
@@ -332,13 +333,13 @@
   }
 }
 
-.social-Media-left {
+.social-media-left {
   display: flex;
   align-items: center;
   gap: 42px;
 }
 
-.social-Media-right {
+.social-media-right {
   display: flex;
   align-items: flex-start;
   font-size: 23px;
@@ -357,7 +358,7 @@
   }
 }
 
-.social-Media-icons {
+.social-media-icons {
   display: flex;
   gap: 42px;
 
@@ -370,7 +371,7 @@
   }
 }
 
-.blue-line {
+.decorative-line {
   height: 4px;
   background-color: var(--vibrant-blue);
   width: 100px;

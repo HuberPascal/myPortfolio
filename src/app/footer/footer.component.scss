@@ -16,7 +16,7 @@ footer {
   }
 }
 
-.footer {
+.footer-container {
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -51,7 +51,7 @@ footer {
   }
 }
 
-.footer-icons-container {
+.footer-social-icons {
   display: flex;
   align-items: center;
   gap: 72px;
@@ -70,23 +70,23 @@ footer {
   }
 }
 
-#Logo {
+#footer-logo {
   color: var(--pure-white);
   font-family: "Poppins", sans-serif;
   font-size: 40px;
   font-weight: 700;
   cursor: pointer;
 
-  .first-letter {
+  .logo-highlight-first-letter {
     color: var(--vibrant-blue);
   }
 
-  .second-letter {
+  .logo-highlight-second-letter {
     color: var(--aqua-blue);
   }
 }
 
-.imprint-top {
+.footer-imprint-link-top {
   display: block;
 
   @media (max-width: 800px) {
@@ -94,7 +94,7 @@ footer {
   }
 }
 
-.imprint-bottom {
+.footer-imprint-link-bottom {
   display: none;
 
   a {
