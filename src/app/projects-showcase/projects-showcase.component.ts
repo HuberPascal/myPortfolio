@@ -11,8 +11,8 @@ export class ProjectsShowcaseComponent {
       imageSrc: 'assets/image/join.png',
       title: 'Join',
       technologies: 'JavaScript | HTML | CSS',
-      description:
-        'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+      description: 'projectDescriptionJoin',
+
       liveTestLink: 'https://pascal-huber.developerakademie.net/Join-Privat',
       githubLink: 'https://github.com/HuberPascal/Join-Privat/',
     },
@@ -20,8 +20,7 @@ export class ProjectsShowcaseComponent {
       imageSrc: 'assets/image/Pollo-loco.png',
       title: 'El pollo loco',
       technologies: 'JavaScript | HTML | CSS',
-      description:
-        'A simple jump-and-run game using an object-oriented approach. Help Pepe gather salsa bottles to defend against the aggressive chicken.',
+      description: 'projectDescriptionElPolloLoco',
       liveTestLink: 'https://pascal-huber.developerakademie.net/El-pollo-loco/',
       githubLink: 'https://github.com/HuberPascal/El-pollo-loco',
     },
@@ -29,8 +28,7 @@ export class ProjectsShowcaseComponent {
       imageSrc: 'assets/image/join.png',
       title: 'Simple CRM',
       technologies: 'Angular | Firebase',
-      description:
-        'A very Simple Customer Relationship Management system working with CRUD functionality.',
+      description: 'projectDescriptionSimpleCRM',
       liveTestLink: 'Link zum Live-Test',
       githubLink: 'Link zum GitHub-Repo',
     },
@@ -38,8 +36,7 @@ export class ProjectsShowcaseComponent {
       imageSrc: 'assets/image/pokedex.png',
       title: 'Pokédex',
       technologies: 'JavaScript | HTML | CSS | API',
-      description:
-        'Based on the PokeAPI a simple library that provides and catalogues pokemon information.',
+      description: 'projectDescriptionPokedex',
       liveTestLink: 'https://pascal-huber.developerakademie.net/Pokedex/',
       githubLink: 'https://github.com/HuberPascal/Pokedex',
     },

@@ -10,10 +10,16 @@
     <div class="project-details">
       <h4 [ngClass]="getMirroredClasses(i)">{{ project.title }}</h4>
       <span [ngClass]="getMirroredClasses(i)">{{ project.technologies }}</span>
-      <p [ngClass]="getMirroredClasses(i)">{{ project.description }}</p>
+      <p [ngClass]="getMirroredClasses(i)">
+        {{ project.description | translate }}
+      </p>
     </div>
     <div [ngClass]="getMirroredBtnClasses(i)" class="project-btn-container">
-      <a class="btn-live-test" [href]="project.liveTestLink" target="_blank"
+      <a
+        class="btn-live-test"
+        [href]="project.liveTestLink"
+        target="_blank"
+        translate="liveTestButton"
         >Live test</a
       >
       <a class="btn-github" [href]="project.githubLink" target="_blank"

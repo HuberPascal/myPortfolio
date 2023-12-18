@@ -1,15 +1,51 @@
+h1 {
+  font-size: 90px;
+  margin: 30px 0;
+
+  @media (max-width: 1550px) {
+    font-size: 70px;
+  }
+
+  @media (max-width: 1200px) {
+    font-size: 60px;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 60px;
+  }
+
+  @media (max-width: 530px) {
+    font-size: 53px;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 46px;
+  }
+
+  @media (max-width: 395px) {
+    font-size: 40px;
+  }
+}
+
 #imprint {
   color: #fff;
   font-family: "Poppins", sans-serif;
   line-height: 120%;
   background-color: var(--midnight-blue);
-  padding: 138px 100px 138px 100px;
+  padding: 138px 100px;
   width: 100%;
   box-sizing: border-box;
+
+  @media (max-width: 1050px) {
+    padding: 138px 25px;
+  }
+
+  @media (max-width: 700px) {
+    padding-bottom: 50px;
+  }
 }
 
 .imprint-container {
-  height: 100%;
   max-width: 1024px;
 }
 
@@ -25,8 +61,18 @@ h3 {
 
 .title-decor-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  position: relative;
+  margin-bottom: 50px;
+
+  .impressum-close {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    height: 100%;
+  }
 
   img {
     cursor: pointer;

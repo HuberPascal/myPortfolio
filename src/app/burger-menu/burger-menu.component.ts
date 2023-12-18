@@ -1,5 +1,6 @@
 import { Component, Renderer2, Injector } from '@angular/core';
 import { AppComponent } from '../app.component';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-burger-menu',
@@ -11,7 +12,11 @@ export class BurgerMenuComponent {
 
   private appComponent: AppComponent;
 
-  constructor(private renderer: Renderer2, private injector: Injector) {
+  constructor(
+    private renderer: Renderer2,
+    private injector: Injector,
+    public translate: TranslateService
+  ) {
     this.appComponent = this.injector.get(AppComponent);
   }
 

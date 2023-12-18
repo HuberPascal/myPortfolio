@@ -12,7 +12,7 @@
         }"
         type="text"
         name="name"
-        placeholder="Your name"
+        placeholder="{{ 'namePlaceholder' | translate }}"
         (focus)="onInputFocusName()"
         (blur)="onInputBlurName()"
       />
@@ -29,7 +29,7 @@
         class="input-validation-icon"
       />
       <div class="required" *ngIf="inputFocusName && inputValueName.length < 5">
-        <p>Your name is required</p>
+        <p translate="nameRequiredError"></p>
       </div>
     </div>
 
@@ -43,7 +43,7 @@
         }"
         type="email"
         name="email"
-        placeholder="Your email"
+        placeholder="{{ 'emailPlaceholder' | translate }}"
         (focus)="onInputFocusMail()"
         (blur)="onInputBlurMail()"
       />
@@ -62,7 +62,7 @@
         class="input-validation-icon"
       />
       <div class="required" *ngIf="inputFocusMail && !isEmailValid()">
-        <p>Your email is required</p>
+        <p translate="emailRequiredError"></p>
       </div>
     </div>
     <div class="textarea-container-message">
@@ -77,7 +77,7 @@
           'default-border': !inputFocusMessage && !inputValueMessage
         }"
         name="message"
-        placeholder="Your message"
+        placeholder="{{ 'messagePlaceholder' | translate }}"
         (focus)="onInputFocusMessage()"
         (blur)="onInputBlurMessage()"
       ></textarea>
@@ -101,7 +101,7 @@
         class="input-validation-icon-textarea-textarea"
       />
       <div class="required" *ngIf="inputFocusMessage && !isMessageValid()">
-        <p>Your message is empty or less than 20 characters</p>
+        <p translate="messageLengthError"></p>
       </div>
     </div>
   </div>
@@ -117,9 +117,11 @@
         </div>
 
         <p>
-          I`ve read the
-          <a routerLink="/imprint">privacy policy</a> and agree to the
-          processing of my data as outlined.
+          <span translate>I`ve read the</span>
+          <a routerLink="/imprint" translate>privacy policy</a>
+          <span translate
+            >and agree to the processing of my data as outlined.</span
+          >
         </p>
       </div>
       <p
@@ -130,6 +132,7 @@
           !privacyPolicyChecked
         "
         class="required"
+        translate
       >
         Please accept the privacy policy
       </p>
@@ -143,7 +146,7 @@
         }"
         [disabled]="!isFormValid()"
       >
-        Send message :&#41;
+        {{ "sendMessageButton" | translate }} :&#41;
       </button>
     </div>
   </div>
