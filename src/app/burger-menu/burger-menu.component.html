@@ -8,11 +8,27 @@
 
 <nav [ngClass]="{ 'active-menu': isActive, 'hidden-menu': !isActive }">
   <ul>
-    <li><a (click)="scrollToSection('about-me')">About me</a></li>
-    <li><a (click)="scrollToSection('my-skills')">Skills</a></li>
-    <li><a (click)="scrollToSection('portfolio')">Portfolio</a></li>
-    <li><a (click)="scrollToSection('contact')">Contact</a></li>
-    <li><a (click)="translate.use('de')">DE</a></li>
-    <li><a (click)="translate.use('en')">EN</a></li>
+    <li>
+      <a (click)="scrollToSection('about-me')" (click)="toggleMenu()" translate
+        >About me</a
+      >
+    </li>
+    <li>
+      <a (click)="scrollToSection('my-skills')" (click)="toggleMenu()" translate
+        >Skills</a
+      >
+    </li>
+    <li>
+      <a (click)="scrollToSection('portfolio')" (click)="toggleMenu()"
+        >Portfolio</a
+      >
+    </li>
+    <li>
+      <a (click)="scrollToSection('contact')" (click)="toggleMenu()" translate
+        >Contact</a
+      >
+    </li>
+    <li><a (click)="translate.use('de')" (click)="toggleMenu()">DE</a></li>
+    <li><a (click)="translate.use('en')" (click)="toggleMenu()">EN</a></li>
   </ul>
 </nav>

@@ -129,24 +129,24 @@ export class ContactFormComponent {
       });
   }
 
-  test(event: any) {
-    this.isMailSend = true;
+  // test(event: any) {
+  //   this.isMailSend = true;
 
-    setTimeout(() => {
-      this.fadeOutSendMessage = true;
+  //   setTimeout(() => {
+  //     this.fadeOutSendMessage = true;
 
-      setTimeout(() => {
-        this.isMailSend = false;
-        this.fadeOutSendMessage = false;
+  //     setTimeout(() => {
+  //       this.isMailSend = false;
+  //       this.fadeOutSendMessage = false;
 
-        this.inputFocusName = false;
-        this.inputValueName = '';
-        this.inputFocusMail = false;
-        this.inputValueMail = '';
-        this.inputFocusMessage = false;
-        this.inputValueMessage = '';
-        this.privacyPolicyChecked = false;
-      }, 300);
-    }, 5000);
-  }
+  //       this.inputFocusName = false;
+  //       this.inputValueName = '';
+  //       this.inputFocusMail = false;
+  //       this.inputValueMail = '';
+  //       this.inputFocusMessage = false;
+  //       this.inputValueMessage = '';
+  //       this.privacyPolicyChecked = false;
+  //     }, 300);
+  //   }, 5000);
+  // }
 }

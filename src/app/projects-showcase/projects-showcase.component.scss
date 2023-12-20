@@ -32,6 +32,8 @@ p {
   padding-top: 150px;
   font-family: "Poppins", sans-serif;
   margin: 0 100px;
+  position: relative;
+  z-index: 2;
 
   img {
     @media (max-width: 1050px) {

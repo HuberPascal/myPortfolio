@@ -7,6 +7,7 @@ p {
 form {
   display: flex;
   flex-direction: column;
+  max-width: 520px;
 }
 
 .form-text-area {
