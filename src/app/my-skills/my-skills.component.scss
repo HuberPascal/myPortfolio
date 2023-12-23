@@ -6,11 +6,10 @@ p {
 }
 
 #my-skills {
-  color: #fff;
+  color: var(--pure-white);
   font-family: "Poppins", sans-serif;
   position: relative;
   background-color: var(--midnight-blue);
-  box-sizing: border-box;
 }
 
 .skills-container {
@@ -19,6 +18,9 @@ p {
   gap: 100px;
   padding-left: 100px;
   padding-bottom: 250px;
+  max-width: 1920px;
+  margin: 0 auto;
+  box-sizing: border-box;
 
   @media (max-width: 1400px) {
     gap: 70px;
@@ -80,6 +82,10 @@ p {
     @media (max-width: 390px) {
       transform: scale(0.6);
     }
+
+    @media (max-width: 350px) {
+      transform: scale(0.5);
+    }
   }
 
   @media (max-width: 1500px) {
@@ -125,6 +131,16 @@ p {
     gap: 24px;
     width: 312px;
   }
+
+  @media (max-width: 350px) {
+    gap: 12px;
+    width: 288px;
+  }
+
+  @media (max-width: 340px) {
+    gap: 8px;
+    width: 280px;
+  }
 }
 
 .my-skill-text-container {
@@ -164,7 +180,7 @@ button {
   transform: translateX(50%);
   padding: 15px 30px;
   border-radius: 10px;
-  color: #ffffff;
+  color: var(--pure-white);
   background-color: var(--aqua-blue);
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
   border: none;

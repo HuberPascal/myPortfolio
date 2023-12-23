@@ -1,29 +1,35 @@
-<div
-  class="projects"
-  *ngFor="let project of projects; let i = index"
-  [ngClass]="getCssClasses(i)"
->
-  <div [ngClass]="getMirroredClasses(i)" class="project-image-container">
-    <img [src]="project.imageSrc" alt="" />
-  </div>
-  <div class="project-details-container">
-    <div class="project-details">
-      <h4 [ngClass]="getMirroredClasses(i)">{{ project.title }}</h4>
-      <span [ngClass]="getMirroredClasses(i)">{{ project.technologies }}</span>
-      <p [ngClass]="getMirroredClasses(i)">
-        {{ project.description | translate }}
-      </p>
-    </div>
-    <div [ngClass]="getMirroredBtnClasses(i)" class="project-btn-container">
-      <a
-        class="btn-live-test"
-        [href]="project.liveTestLink"
-        target="_blank"
-        translate="liveTestButton"
-      ></a>
-      <a class="btn-github" [href]="project.githubLink" target="_blank"
-        >Github</a
-      >
+<div class="container-max-width">
+  <div
+    [attr.data-aos]="getAosAnimation(i)"
+    data-aos-offset="400"
+    *ngFor="let project of projects; let i = index"
+  >
+    <div class="projects" [ngClass]="getCssClasses(i)">
+      <div [ngClass]="getMirroredClasses(i)" class="project-image-container">
+        <img [src]="project.imageSrc" alt="Project image" />
+      </div>
+      <div class="project-details-container">
+        <div class="project-details">
+          <h4 [ngClass]="getMirroredClasses(i)">{{ project.title }}</h4>
+          <span [ngClass]="getMirroredClasses(i)">{{
+            project.technologies
+          }}</span>
+          <p [ngClass]="getMirroredClasses(i)">
+            {{ project.description | translate }}
+          </p>
+        </div>
+        <div [ngClass]="getMirroredBtnClasses(i)" class="project-btn-container">
+          <a
+            class="btn-live-test"
+            [href]="project.liveTestLink"
+            target="_blank"
+            translate="liveTestButton"
+          ></a>
+          <a class="btn-github" [href]="project.githubLink" target="_blank"
+            >Github</a
+          >
+        </div>
+      </div>
     </div>
   </div>
 </div>

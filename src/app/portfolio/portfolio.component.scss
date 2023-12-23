@@ -9,7 +9,7 @@ p {
   font-family: "Poppins", sans-serif;
   position: relative;
   padding-bottom: 250px;
-  background-color: #141d2f;
+  background-color: var(--midnight-blue);
   box-sizing: border-box;
   height: auto;
 
@@ -45,7 +45,7 @@ p {
 .decorative-line-left,
 .decorative-line-right {
   height: 4px;
-  background-color: #4b47ff;
+  background-color: var(--vibrant-blue);
 }
 
 .title-decor-container {
@@ -78,10 +78,14 @@ p {
 
   img {
     position: absolute;
-    top: 1200px;
+    top: 1100px;
     left: 0;
     z-index: 1;
     max-width: 100%;
+  }
+
+  @media (max-width: 1400px) {
+    display: none;
   }
 }
 

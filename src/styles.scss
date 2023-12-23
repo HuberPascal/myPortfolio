@@ -1,8 +1,9 @@
+@import "aos/dist/aos.css";
+
 body {
   margin: 0 auto;
   padding: 0;
   width: 100%;
-  max-width: 1920px;
   scroll-behavior: smooth;
   background-color: var(--midnight-blue);
 }
@@ -57,7 +58,7 @@ h1 {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #00bee8;
+  background: var(--aqua-blue);
   border-radius: 6px;
   border: 2px solid transparent;
   background-clip: padding-box;
@@ -66,5 +67,5 @@ h1 {
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #00bee8 transparent;
+  scrollbar-color: var(--aqua-blue) transparent;
 }

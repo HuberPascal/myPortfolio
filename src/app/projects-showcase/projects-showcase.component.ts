@@ -14,7 +14,7 @@ export class ProjectsShowcaseComponent {
       description: 'projectDescriptionJoin',
 
       liveTestLink: 'https://pascal-huber.developerakademie.net/Join-Privat',
-      githubLink: 'https://github.com/HuberPascal/Join-Privat/',
+      githubLink: 'https://github.com/HuberPascal/Join',
     },
     {
       imageSrc: 'assets/image/Pollo-loco.png',
@@ -58,5 +58,9 @@ export class ProjectsShowcaseComponent {
     return {
       'odd-project-btn-container': index % 2 !== 0,
     };
+  }
+
+  getAosAnimation(index: number): string {
+    return index % 2 === 0 ? 'fade-right' : 'fade-left';
   }
 }

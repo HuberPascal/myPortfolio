@@ -19,13 +19,13 @@
       <img
         *ngIf="showImageName && inputFocusName && inputValueName.length < 5"
         src="assets/image/icons/contact/mistake-icon.png"
-        alt=""
+        alt="Mistake icon"
         class="input-validation-icon"
       />
       <img
         *ngIf="showImageName && inputFocusName && inputValueName.length >= 5"
         src="assets/image/icons/contact/correct-icon.png"
-        alt=""
+        alt="Correct icon"
         class="input-validation-icon"
       />
       <div class="required" *ngIf="inputFocusName && inputValueName.length < 5">
@@ -50,7 +50,7 @@
       <img
         *ngIf="showImageMail && inputFocusMail && !isEmailValid()"
         src="assets/image/icons/contact/mistake-icon.png"
-        alt=""
+        alt="Mistake icon"
         class="input-validation-icon"
       />
       <img
@@ -58,7 +58,7 @@
           showImageMail && inputFocusMail && inputValueMail && isEmailValid()
         "
         src="assets/image/icons/contact/correct-icon.png"
-        alt=""
+        alt="Correct icon"
         class="input-validation-icon"
       />
       <div class="required" *ngIf="inputFocusMail && !isEmailValid()">
@@ -86,7 +86,7 @@
           showImageMessage && inputFocusMessage && inputValueMessage.length < 20
         "
         src="assets/image/icons/contact/mistake-icon.png"
-        alt=""
+        alt="Mistake icon"
         class="input-validation-icon-textarea-textarea"
       />
       <img
@@ -97,7 +97,7 @@
           inputValueMessage.length >= 20
         "
         src="assets/image/icons/contact/correct-icon.png"
-        alt=""
+        alt="Correct icon"
         class="input-validation-icon-textarea-textarea"
       />
       <div class="required" *ngIf="inputFocusMessage && !isMessageValid()">

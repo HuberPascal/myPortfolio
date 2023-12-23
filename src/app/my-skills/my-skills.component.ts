@@ -43,9 +43,9 @@ export class MySkillsComponent implements OnInit {
 
   skills: string[] = [
     'Angular',
-    'Typescript',
-    ' JavaScript',
-    ' HTML',
+    'TypeScript',
+    'JavaScript',
+    'HTML',
     'Firebase',
     'GIT',
     'CSS',

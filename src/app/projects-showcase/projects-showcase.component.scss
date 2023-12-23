@@ -1,7 +1,7 @@
 h4 {
   font-size: 32px;
   font-weight: 700;
-  color: #4b47ff;
+  color: var(--vibrant-blue);
   margin: 0;
 }
 
@@ -17,13 +17,21 @@ h4 {
 span {
   margin: 0;
   font-size: 23px;
-  color: #00bee8;
+  color: var(--aqua-blue);
+  z-index: 2;
 }
 
 p {
   margin: 0;
   font-size: 16px;
   line-height: 120%;
+  z-index: 2;
+}
+
+.container-max-width {
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .projects {
@@ -34,12 +42,6 @@ p {
   margin: 0 100px;
   position: relative;
   z-index: 2;
-
-  img {
-    @media (max-width: 1050px) {
-      transform: scale(0.9);
-    }
-  }
 
   @media (max-width: 1400px) {
     padding-top: 80px;
@@ -88,6 +90,10 @@ p {
 
   img {
     height: 100%;
+
+    @media (max-width: 1050px) {
+      transform: scale(0.9);
+    }
   }
 
   @media (max-width: 950px) {
@@ -141,26 +147,27 @@ p {
 
 .btn-live-test {
   padding: 15px 30px;
-  color: #ffffff;
+  color: var(--pure-white);
   font-size: 23px;
-  background-color: #4b47ff;
+  background-color: var(--vibrant-blue);
   border-radius: 10px;
   transition: background-color 0.1s ease;
 
   &:hover {
-    background-color: #00bee8;
+    background-color: var(--aqua-blue);
   }
 }
 
 .btn-github {
   padding: 15px 30px;
-  color: #ffffff;
+  color: var(--pure-white);
   font-size: 23px;
   border-radius: 10px;
-  border: 1px solid #00bee8;
+  border: 1px solid var(--aqua-blue);
   transition: background-color 0.1s ease;
+  background-color: var(--midnight-blue);
 
   &:hover {
-    background-color: #00bee8;
+    background-color: var(--aqua-blue);
   }
 }

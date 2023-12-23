@@ -5,7 +5,7 @@ p {
 }
 
 footer {
-  color: #fff;
+  color: var(--pure-white);
   font-family: "Poppins", sans-serif;
   background-color: var(--midnight-blue);
   box-sizing: border-box;
@@ -22,6 +22,9 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 120px 100px;
+  max-width: 1920px;
+  margin: 0 auto;
+  box-sizing: border-box;
 
   @media (max-width: 1050px) {
     gap: 32px;
