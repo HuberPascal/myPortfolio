@@ -1,4 +1,4 @@
-import { Component, OnInit, PLATFORM_ID, Inject } from '@angular/core';
+import { Component, PLATFORM_ID, Inject } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { isPlatformBrowser } from '@angular/common';
 import AOS from 'aos';
@@ -22,9 +22,6 @@ export class AppComponent {
     if (isPlatformBrowser(this.platformId)) {
       AOS.init();
     }
-    // alert(
-    //   'Soll das Hintergrundbild bei der Responsive Ansicht bei der Portfolio Sektion entfernt werden, da es die selbe hintergrundfarbe hat wie die Buttons und H4 Überschrift?'
-    // );
   }
 
   scrollToSection(sectionId: string) {

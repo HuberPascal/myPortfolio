@@ -40,6 +40,7 @@ p {
   align-items: center;
   width: 100%;
   gap: 42px;
+  max-width: 1920px;
 }
 
 .decorative-line-left,
@@ -80,7 +81,6 @@ p {
     position: absolute;
     top: 1100px;
     left: 0;
-    z-index: 1;
     max-width: 100%;
   }
 
@@ -91,16 +91,24 @@ p {
 
 .portfolio-background-img-right {
   z-index: 1;
+  width: 100%;
+  overflow: hidden;
+
   img {
     position: absolute;
     bottom: -300px;
     right: 0;
     z-index: 1;
     max-width: 100%;
+
+    @media (max-width: 1400px) {
+      bottom: 200px;
+      z-index: 0;
+    }
   }
 }
 
 app-projects-showcase {
   position: relative;
-  z-index: 2;
+  z-index: 10;
 }
