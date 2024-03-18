@@ -25,12 +25,12 @@ export class ProjectsShowcaseComponent {
       githubLink: 'https://github.com/HuberPascal/El-pollo-loco',
     },
     {
-      imageSrc: 'assets/image/join.png',
+      imageSrc: 'assets/image/simple-crm.png',
       title: 'Simple CRM',
       technologies: 'Angular | Firebase',
       description: 'projectDescriptionSimpleCRM',
-      liveTestLink: 'Link zum Live-Test',
-      githubLink: 'Link zum GitHub-Repo',
+      liveTestLink: 'https://crm.pascal-huber.ch/',
+      githubLink: 'https://github.com/HuberPascal/simple-crm',
     },
     {
       imageSrc: 'assets/image/pokedex.png',
