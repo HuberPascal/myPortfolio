@@ -13,7 +13,7 @@ export class ProjectsShowcaseComponent {
       technologies: 'JavaScript | HTML | CSS',
       description: 'projectDescriptionJoin',
 
-      liveTestLink: 'https://pascal-huber.developerakademie.net/Join-Privat',
+      liveTestLink: 'http://join.pascal-huber.ch/',
       githubLink: 'https://github.com/HuberPascal/Join',
     },
     {
@@ -21,7 +21,7 @@ export class ProjectsShowcaseComponent {
       title: 'El pollo loco',
       technologies: 'JavaScript | HTML | CSS',
       description: 'projectDescriptionElPolloLoco',
-      liveTestLink: 'https://pascal-huber.developerakademie.net/El-pollo-loco/',
+      liveTestLink: 'https://el-pollo-loco.pascal-huber.ch/',
       githubLink: 'https://github.com/HuberPascal/El-pollo-loco',
     },
     {
