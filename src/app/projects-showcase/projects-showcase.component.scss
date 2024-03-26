@@ -31,7 +31,7 @@ p {
 .container-max-width {
   max-width: 1920px;
   margin: 0 auto;
-  overflow-x: hidden;
+  overflow: hidden;
   z-index: 900;
 }
 
@@ -91,9 +91,18 @@ p {
 
   img {
     height: 100%;
+    transform: scale(1.3);
 
-    @media (max-width: 1050px) {
-      transform: scale(0.9);
+    @media (max-width: 1500px) {
+      transform: scale(1.2);
+    }
+
+    @media (max-width: 1350px) {
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 450px) {
+      transform: scale(1);
     }
   }
 

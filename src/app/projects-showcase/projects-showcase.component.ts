@@ -13,7 +13,7 @@ export class ProjectsShowcaseComponent {
       technologies: 'JavaScript | HTML | CSS',
       description: 'projectDescriptionJoin',
 
-      liveTestLink: 'http://join.pascal-huber.ch/',
+      liveTestLink: 'https://join.pascal-huber.ch/',
       githubLink: 'https://github.com/HuberPascal/Join',
     },
     {
