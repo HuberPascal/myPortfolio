@@ -4,7 +4,11 @@ import { AppComponent } from '../app.component';
 @Component({
   selector: 'app-above-the-fold',
   templateUrl: './above-the-fold.component.html',
-  styleUrl: './above-the-fold.component.scss',
+  styleUrls: [
+    './above-the-fold.component.scss',
+    './profile-photo.style.scss',
+    './background-img.style.scss',
+  ],
 })
 export class AboveTheFoldComponent {
   private appComponent: AppComponent;
