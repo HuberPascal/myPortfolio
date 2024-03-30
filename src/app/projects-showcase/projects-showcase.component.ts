@@ -37,7 +37,7 @@ export class ProjectsShowcaseComponent {
       title: 'Pokédex',
       technologies: 'JavaScript | HTML | CSS | API',
       description: 'projectDescriptionPokedex',
-      liveTestLink: 'https://pascal-huber.developerakademie.net/Pokedex/',
+      liveTestLink: 'https://pokedex.pascal-huber.ch',
       githubLink: 'https://github.com/HuberPascal/Pokedex',
     },
   ];
